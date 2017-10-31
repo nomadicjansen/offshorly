@@ -1,0 +1,176 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: _error
+  timestamp: 1486475006
+layout:
+  /top/:
+    -
+      - system-messages-9828
+  /navigation/:
+    -
+      - 'menu-2027 60'
+      - 'contentarray-4128 40'
+  /header/: {  }
+  /slideshow/:
+    -
+      - simplecontent-7561
+  /above/: {  }
+  /showcase/: {  }
+  /utility/: {  }
+  /feature/: {  }
+  /container-main/:
+    -
+      -
+        'sidebar 20': {  }
+      -
+        'mainbar 60': {  }
+      -
+        'aside 20': {  }
+  /expanded/: {  }
+  /extension/: {  }
+  /bottom/: {  }
+  /footer/: {  }
+  copyright: {  }
+  offcanvas: {  }
+structure:
+  top:
+    type: section
+    attributes:
+      boxed: '3'
+  navigation:
+    type: section
+    attributes:
+      boxed: '3'
+      class: ''
+  header:
+    attributes:
+      boxed: '3'
+      class: ''
+  slideshow:
+    type: section
+    attributes:
+      boxed: '3'
+      class: ''
+  above:
+    type: section
+    attributes:
+      boxed: '3'
+      class: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: '3'
+      class: ''
+  utility:
+    type: section
+    attributes:
+      boxed: '3'
+      class: ''
+  feature:
+    type: section
+    attributes:
+      boxed: '3'
+      class: ''
+  sidebar:
+    type: section
+    block:
+      class: equal-height
+  mainbar:
+    type: section
+    block:
+      class: equal-height
+  aside:
+    block:
+      class: equal-height
+  container-main:
+    attributes:
+      boxed: '3'
+      class: ''
+      extra: {  }
+  expanded:
+    type: section
+    attributes:
+      boxed: '3'
+      class: ''
+  extension:
+    type: section
+    attributes:
+      boxed: '3'
+      class: ''
+  bottom:
+    type: section
+    attributes:
+      boxed: '3'
+      class: ''
+  footer:
+    attributes:
+      boxed: '3'
+      class: ''
+  copyright:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  menu-2027:
+    inherit:
+      outline: default
+      particle: menu-2350
+      include:
+        - attributes
+        - block
+  contentarray-4128:
+    title: 'Grav Content'
+    attributes:
+      article:
+        filter:
+          categories: home-g-navigation-contacts
+        limit:
+          total: '1'
+          columns: '1'
+          start: '0'
+        sort:
+          orderby: default
+          ordering: asc
+        display:
+          text:
+            formatting: html
+          title:
+            enabled: ''
+          date:
+            enabled: ''
+          read_more:
+            enabled: ''
+          author:
+            enabled: ''
+          category:
+            enabled: ''
+    block:
+      variations: align-right
+  simplecontent-7561:
+    title: 'We are sorry!'
+    attributes:
+      class: ''
+      title: ''
+      items:
+        -
+          layout: header
+          created_date: ''
+          content_title: 'Error 404'
+          author: ''
+          leading_content: 'Woops. Looks like this page doesn''t exist.'
+          main_content: ''
+          readmore_label: ''
+          readmore_link: ''
+          readmore_class: ''
+          readmore_target: _self
+          title: 'We are sorry!'

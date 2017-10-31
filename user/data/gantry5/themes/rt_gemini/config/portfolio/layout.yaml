@@ -1,0 +1,282 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: home_-_particles
+  timestamp: 1486446206
+layout:
+  /container-overlay/:
+    -
+      -
+        'sideoverlay 40': {  }
+      -
+        'mainoverlay 60': {  }
+  top: {  }
+  /navigation/: {  }
+  /slideshow/: {  }
+  /header/:
+    -
+      - contentarray-4553
+  /utility/:
+    -
+      - contentarray-3595
+  /feature/: {  }
+  /expanded/:
+    -
+      - contentarray-6237
+    -
+      - contentarray-6524
+  /extension/: {  }
+  /bottom/: {  }
+  /footer/:
+    -
+      - contentarray-2185
+    -
+      - system-content-8939
+  copyright: {  }
+  offcanvas: {  }
+structure:
+  sideoverlay:
+    type: section
+    subtype: aside
+    title: 'Overlay Sidebar'
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  mainoverlay:
+    type: section
+    subtype: main
+    title: 'Overlay Main'
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  container-overlay:
+    attributes:
+      boxed: '3'
+      class: ''
+      extra: {  }
+  top:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  navigation:
+    type: section
+    attributes:
+      boxed: '3'
+      class: 'fp-navigation nopaddingbottom'
+    inherit:
+      outline: default
+      include:
+        - children
+  slideshow:
+    type: section
+    attributes:
+      boxed: '3'
+      class: fp-slideshow
+  header:
+    attributes:
+      boxed: '3'
+      class: g-portfolio
+  utility:
+    type: section
+    attributes:
+      boxed: '0'
+      class: 'fp-utility g-portfolio'
+  feature:
+    type: section
+    attributes:
+      boxed: '3'
+      class: ''
+  expanded:
+    type: section
+    attributes:
+      boxed: '3'
+      class: 'fp-expanded-homeparticles g-portfolio'
+  extension:
+    type: section
+    attributes:
+      boxed: '3'
+      class: g-portfolio
+  bottom:
+    type: section
+    attributes:
+      boxed: '3'
+      class: fp-bottom
+  footer:
+    attributes:
+      boxed: '3'
+      class: ''
+  copyright:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  contentarray-4553:
+    title: 'Grav Content - Header'
+    attributes:
+      article:
+        filter:
+          categories: portfolio-header
+        limit:
+          total: '1'
+          columns: '1'
+          start: '0'
+        sort:
+          orderby: default
+          ordering: asc
+        display:
+          image:
+            enabled: full
+          text:
+            type: full
+            formatting: html
+          title:
+            enabled: ''
+          date:
+            enabled: ''
+          read_more:
+            enabled: ''
+          author:
+            enabled: ''
+          category:
+            enabled: ''
+      css:
+        class: portfolio-header
+  contentarray-3595:
+    title: 'Grav Content - Featured Projects'
+    attributes:
+      article:
+        filter:
+          categories: portfolio-projects-featured
+        limit:
+          total: '99'
+          columns: '1'
+          start: '0'
+        sort:
+          orderby: title
+          ordering: asc
+        display:
+          image:
+            enabled: full
+          text:
+            type: full
+            formatting: html
+          title:
+            enabled: ''
+          date:
+            enabled: ''
+          read_more:
+            enabled: ''
+          author:
+            enabled: ''
+          category:
+            enabled: ''
+      css:
+        class: portfolio-projects-featured
+  contentarray-6237:
+    title: 'Grav Content - Header'
+    attributes:
+      article:
+        filter:
+          categories: portfolio-header-2
+        limit:
+          total: '1'
+          columns: '1'
+          start: '0'
+        sort:
+          orderby: default
+          ordering: desc
+        display:
+          image:
+            enabled: full
+          text:
+            type: full
+            formatting: html
+          title:
+            enabled: ''
+          date:
+            enabled: ''
+          read_more:
+            enabled: ''
+          author:
+            enabled: ''
+          category:
+            enabled: ''
+      css:
+        class: portfolio-header-2
+  contentarray-6524:
+    title: 'Grav Content - Projects'
+    attributes:
+      article:
+        filter:
+          categories: portfolio-projects
+        limit:
+          total: '99'
+          columns: '2'
+          start: '0'
+        sort:
+          orderby: title
+          ordering: asc
+        display:
+          image:
+            enabled: full
+          text:
+            formatting: html
+          title:
+            enabled: ''
+          date:
+            enabled: ''
+          read_more:
+            enabled: ''
+          author:
+            enabled: ''
+          category:
+            enabled: ''
+      css:
+        class: portfolio-projects
+  contentarray-2185:
+    title: 'Grav Content'
+    attributes:
+      article:
+        filter:
+          categories: portfolio-header-form
+        limit:
+          total: '1'
+          columns: '1'
+          start: '0'
+        sort:
+          orderby: default
+          ordering: asc
+        display:
+          image:
+            enabled: full
+          text:
+            type: full
+            formatting: html
+          title:
+            enabled: ''
+          date:
+            enabled: ''
+          read_more:
+            enabled: ''
+          author:
+            enabled: ''
+          category:
+            enabled: ''

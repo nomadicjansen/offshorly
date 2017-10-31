@@ -1,0 +1,64 @@
+name: news
+timestamp: 1499072562
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: home_-_particles
+  timestamp: 1486446206
+positions: {  }
+sections:
+  sideoverlay: 'Overlay Sidebar'
+  mainoverlay: 'Overlay Main'
+  top: Top
+  navigation: Navigation
+  slideshow: Slideshow
+  utility: Utility
+  feature: Feature
+  expanded: Expanded
+  extension: Extension
+  bottom: Bottom
+  copyright: Copyright
+  header: Header
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  accordionmenu:
+    accordionmenu-4111: 'Accordion Menu'
+  custom:
+    custom-1870: Contact
+    custom-1946: Info
+    custom-1816: 'Custom HTML'
+  social:
+    social-3923: Social
+  messages:
+    system-messages-6626: 'System Messages'
+  menu:
+    menu-6703: Menu
+  contentarray:
+    contentarray-7197: 'Grav Content'
+    contentarray-4603: 'Grav Content - Title'
+    contentarray-8324: 'Grav Content - News'
+  feed:
+    feed-1774: 'Feed Buttons'
+  branding:
+    branding-1387: Branding
+  mobile-menu:
+    mobile-menu-4621: Mobile-menu
+inherit:
+  default:
+    sideoverlay: sideoverlay
+    accordionmenu-4111: accordionmenu-7045
+    mainoverlay: mainoverlay
+    custom-1870: custom-4659
+    social-3923: social-3757
+    custom-1946: custom-4238
+    top: top
+    system-messages-6626: system-messages-9828
+    navigation: navigation
+    menu-6703: menu-2350
+    contentarray-7197: contentarray-8551
+    copyright: copyright
+    branding-1387: branding-9192
+    custom-1816: custom-4457
+    offcanvas: offcanvas
+    mobile-menu-4621: mobile-menu-7951

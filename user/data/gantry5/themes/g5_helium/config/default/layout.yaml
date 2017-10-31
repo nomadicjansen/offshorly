@@ -1,0 +1,158 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1488010023
+layout:
+  /navigation/:
+    -
+      - 'logo-9608 15'
+      - 'menu-6409 65'
+      - 'social-3171 20'
+  /header/: {  }
+  /intro/:
+    -
+      - system-content-5683
+  /features/: {  }
+  /utility/: {  }
+  /above/: {  }
+  /testimonials/: {  }
+  /expanded/: {  }
+  /container-main/:
+    -
+      -
+        'aside 25':
+          -
+            - position-position-4734
+      -
+        'mainbar 50':
+          -
+            - system-content-1587
+      -
+        'sidebar 25':
+          -
+            - position-position-3949
+  /footer/:
+    -
+      - 'copyright-1736 33'
+      - 'horizontalmenu-9034 48'
+      - 'totop-8670 19'
+  /offcanvas/:
+    -
+      - mobile-menu-5697
+structure:
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+  intro:
+    type: section
+    attributes:
+      boxed: ''
+  features:
+    type: section
+    attributes:
+      boxed: ''
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  above:
+    type: section
+    attributes:
+      boxed: ''
+  testimonials:
+    type: section
+    attributes:
+      boxed: ''
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+  aside:
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: '3'
+      class: ''
+      extra: {  }
+  footer:
+    attributes:
+      boxed: ''
+  offcanvas:
+    attributes:
+      boxed: ''
+content:
+  logo-9608:
+    title: 'Logo / Image'
+    attributes:
+      image: 'gantry-media://Offshorly-Green.svg'
+  social-3171:
+    attributes:
+      items:
+        -
+          icon: 'fa fa-twitter fa-fw'
+          text: ''
+          link: '#'
+          name: Twitter
+        -
+          icon: 'fa fa-facebook fa-fw'
+          text: ''
+          link: '#'
+          name: Facebook
+    block:
+      class: g-social-header
+  position-position-4734:
+    title: Aside
+    attributes:
+      enabled: 0
+      key: aside
+  system-content-1587:
+    attributes:
+      enabled: 0
+  position-position-3949:
+    title: Sidebar
+    attributes:
+      key: sidebar
+  copyright-1736:
+    attributes:
+      enabled: 0
+  horizontalmenu-9034:
+    title: 'Horizontal Menu'
+    attributes:
+      enabled: 0
+      items:
+        -
+          text: Gantry
+          link: 'http://gantry.org'
+          name: Gantry
+        -
+          text: Documentation
+          link: 'http://docs.gantry.org'
+          name: Documentation
+        -
+          text: Download
+          link: 'http://gantry.org/downloads'
+          name: Download
+  totop-8670:
+    title: 'To Top'
+    attributes:
+      enabled: 0

@@ -1,0 +1,12 @@
+settings:
+  title: Mainmenu
+ordering:
+  home: ''
+  portfolio: ''
+items:
+  home:
+    enabled: true
+    anchor_class: ''
+  portfolio:
+    enabled: true
+    anchor_class: ''

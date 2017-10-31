@@ -1,0 +1,64 @@
+<?php
+return [
+    '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
+    'filename' => 'C:\\projects\\xampp\\htdocs\\offshorly\\user\\plugins\\sitemap/blueprints/sitemap.yaml',
+    'modified' => 1497424160,
+    'data' => [
+        'form' => [
+            'fields' => [
+                'tabs' => [
+                    'fields' => [
+                        'options' => [
+                            'type' => 'tab',
+                            'fields' => [
+                                'sitemap' => [
+                                    'type' => 'section',
+                                    'title' => 'Sitemap',
+                                    'underline' => true,
+                                    'fields' => [
+                                        'header.sitemap.changefreq' => [
+                                            'type' => 'select',
+                                            'label' => 'Sitemap change frequency',
+                                            'default' => '',
+                                            'options' => [
+                                                '' => 'Use Global',
+                                                'always' => 'Always',
+                                                'hourly' => 'Hourly',
+                                                'daily' => 'Daily',
+                                                'weekly' => 'Weekly',
+                                                'monthly' => 'Monthly',
+                                                'yearly' => 'Yearly',
+                                                'never' => 'Never'
+                                            ]
+                                        ],
+                                        'header.sitemap.priority' => [
+                                            'type' => 'select',
+                                            'label' => 'Sitemap Priority',
+                                            'default' => '',
+                                            'options' => [
+                                                '' => 'Use Global',
+                                                '0.1' => 0.1,
+                                                '0.2' => 0.2,
+                                                '0.3' => 0.3,
+                                                '0.4' => 0.4,
+                                                '0.5' => 0.5,
+                                                '0.6' => 0.6,
+                                                '0.7' => 0.7,
+                                                '0.8' => 0.8,
+                                                '0.9' => 0.9,
+                                                '1.0' => 1.0
+                                            ],
+                                            'validate' => [
+                                                'type' => 'float'
+                                            ]
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+];

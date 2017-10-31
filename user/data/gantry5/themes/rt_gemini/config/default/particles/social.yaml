@@ -1,0 +1,12 @@
+enabled: '1'
+css:
+  class: ''
+title: ''
+target: _blank
+display: both
+items:
+  -
+    icon: 'fa fa-twitter-square fa-fw'
+    text: ''
+    link: 'http://www.twitter.com/offshorly'
+    name: Twitter

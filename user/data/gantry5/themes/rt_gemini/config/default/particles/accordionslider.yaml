@@ -1,0 +1,6 @@
+enabled: '1'
+displayitems: '3'
+nav: enabled
+loop: enabled
+autoplay: disabled
+pauseOnHover: enabled
