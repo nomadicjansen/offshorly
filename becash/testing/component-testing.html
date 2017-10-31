@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=d358ee59">
+    <link rel="stylesheet" href="../css/becash.css?t=b7edf798">
+    <script src="../assets/script.js?t=42463e55"></script>
+    <title>Component Testing - BeCashReady Docs</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">BeCashReady Docs</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-general" href="../general/index.html">General</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-generalcommands" href="../general/commands.html">CLI Commands</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalfiles" href="../general/files.html">Tool Configuration</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalserver-configs" href="../general/server-configs.html">Server Configurations</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalfaq" href="../general/faq.html">FAQ</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalgotchas" href="../general/gotchas.html">Gotchas</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalremove" href="../general/remove.html">Remove</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Code Style Guides</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-styleguidesjs" href="../styleguides/js.html">JavaScript</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-styleguidescss" href="../styleguides/css.html">CSS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-styleguidesreact" href="../styleguides/react.html">React</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Contributing Code</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-gitgithub-flow" href="../git/github-flow.html">GitHub Flow</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-gitdeployment" href="../git/deployment.html">Deployment</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Submitting Bugs/Issues</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-issue_submissionissue_template" href="../issue_submission/issue_template.html">Issue Template</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-testing" href="../testing/index.html">Testing</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-testingunit-testing" href="../testing/unit-testing.html">Unit Testing</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title -active link-testingcomponent-testing" href="../testing/component-testing.html">Component Testing</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a class="hlink link-shallow-rendering" href="#shallow-rendering">Shallow rendering</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-enzyme" href="#enzyme">Enzyme</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-testingremote-testing" href="../testing/remote-testing.html">Remote Testing</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-css" href="../css/index.html">CSS</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-csspostcss" href="../css/postcss.html">PostCSS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-csscss-modules" href="../css/css-modules.html">CSS Modules</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-csssanitize" href="../css/sanitize.html">sanitize.css</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-cssstylelint" href="../css/stylelint.html">stylelint.css</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-csssass" href="../css/sass.html">Using Sass</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-js" href="../js/index.html">JS</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-jsredux" href="../js/redux.html">Redux</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsimmutablejs" href="../js/immutablejs.html">ImmutableJS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsreselect" href="../js/reselect.html">reselect</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsredux-saga" href="../js/redux-saga.html">redux-saga</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsi18n" href="../js/i18n.html">i18n</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsrouting" href="../js/routing.html">routing</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-testingcomponent-testing">
+        <div class="header-nav">
+          <div class="right">
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="component-testing">Component testing</h1>
+<p><a href="unit-testing.html">Unit testing your Redux actions and reducers</a> is nice, but you
+can do even more to make sure nothing breaks your application. Since React is
+the <em>view</em> layer of your app, let&apos;s see how to test Components too!</p>
+<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<ul>
+<li><a href="#shallow-rendering">Shallow rendering</a></li>
+<li><a href="#enzyme">Enzyme</a></li>
+</ul>
+<!-- /TOC -->
+<h2 id="shallow-rendering">Shallow rendering</h2>
+<p>React provides us with a nice add-on called the Shallow Renderer. This renderer
+will render a React component <strong>one level deep</strong>. Lets take a look at what that
+means with a simple <code>&lt;Button&gt;</code> component...</p>
+<p>This component renders a <code>&lt;button&gt;</code> element containing a checkmark icon and some
+text:</p>
+<pre><code class="lang-javascript"><span class="pl-c">// Button.react.js</span>
+
+<span class="pl-k">import</span> CheckmarkIcon <span class="pl-k">from</span> <span class="pl-s">&apos;./CheckmarkIcon.react&apos;</span>;
+
+<span class="hljs-function"><span class="pl-k">function</span> <span class="pl-ent">Button</span>(<span class="hljs-params">props</span>) </span>{
+  <span class="pl-k">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">className</span>=<span class="pl-s">&quot;btn&quot;</span> <span class="hljs-attr">onClick</span>=<span class="pl-s">{props.onClick}</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">CheckmarkIcon</span> /&gt;</span>
+      { React.Children.only(props.children) }
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span>
+  );
+}
+
+<span class="pl-k">export</span> <span class="pl-k">default</span> Button;
+</code></pre>
+<p><em>Note: This is a <a href="../js/index.html#architecture-components-and-containers">state<strong>less</strong> (&quot;dumb&quot;) component</a></em></p>
+<p>It might be used in another component like this:</p>
+<pre><code class="lang-javascript"><span class="pl-c">// HomePage.react.js</span>
+
+<span class="pl-k">import</span> Button <span class="pl-k">from</span> <span class="pl-s">&apos;./Button.react&apos;</span>;
+
+<span class="hljs-class"><span class="pl-k">class</span> <span class="pl-ent">HomePage</span> <span class="pl-k">extends</span> <span class="pl-ent">React</span>.<span class="pl-ent">Component</span> </span>{
+  render() {
+    <span class="pl-k">return</span>(
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">onClick</span>=<span class="pl-s">{this.doSomething}</span>&gt;</span>Click me!<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span></span>
+    );
+  }
+}
+</code></pre>
+<p><em>Note: This is a <a href="../js/index.html#architecture-components-and-containers">state<strong>ful</strong> (&quot;smart&quot;) component</a>!</em></p>
+<p>When rendered normally with the standard <code>ReactDOM.render</code> function, this will
+be the HTML output
+(<em>Comments added in parallel to compare structures in HTML from JSX source</em>):</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>                           <span class="pl-c">&lt;!-- &lt;Button&gt;             --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="pl-s">&quot;fa fa-checkmark&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>  <span class="pl-c">&lt;!--   &lt;CheckmarkIcon /&gt;  --&gt;</span>
+  Click Me!                        <span class="pl-c">&lt;!--   { props.children } --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>                          <span class="pl-c">&lt;!-- &lt;/Button&gt;            --&gt;</span>
+</code></pre>
+<p>Conversely, when rendered with the shallow renderer, we&apos;ll get a String
+containing this &quot;HTML&quot;:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>              <span class="pl-c">&lt;!-- &lt;Button&gt;             --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">CheckmarkIcon</span> /&gt;</span>   <span class="pl-c">&lt;!--   NOT RENDERED!      --&gt;</span>
+  Click Me!           <span class="pl-c">&lt;!--   { props.children } --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>             <span class="pl-c">&lt;!-- &lt;/Button&gt;            --&gt;</span>
+</code></pre>
+<p>If we test our <code>Button</code> with the normal renderer and there&apos;s a problem
+with the <code>CheckmarkIcon</code> then the test for the <code>Button</code> will fail as well...
+but finding the culprit will be hard. Using the <em>shallow</em> renderer, we isolate
+the problem&apos;s cause since we don&apos;t render any other components other than the
+one we&apos;re testing!</p>
+<p>The problem with the shallow renderer is that all assertions have to be done
+manually, and you cannot do anything that needs the DOM.</p>
+<p>Thankfully, <a href="https://twitter.com/AirbnbEng">AirBnB</a> has open sourced their
+wrapper around the React shallow renderer and jsdom, called <code>enzyme</code>. <code>enzyme</code>
+is a testing utility that gives us a nice assertion/traversal/manipulation API.</p>
+<h2 id="enzyme">Enzyme</h2>
+<p>Lets test our <code>&lt;Button&gt;</code> component! We&apos;re going to assess three things: First,
+that it renders a HTML <code>&lt;button&gt;</code> tag, second that it renders its children we
+pass it and third that handles clicks!</p>
+<p>This is our Mocha setup:</p>
+<pre><code class="lang-javascript">describe(<span class="pl-s">&apos;&lt;Button /&gt;&apos;</span>, () =&gt; {
+  it(<span class="pl-s">&apos;renders a &lt;button&gt;&apos;</span>, () =&gt; {});
+
+  it(<span class="pl-s">&apos;renders its children&apos;</span>, () =&gt; {});
+
+  it(<span class="pl-s">&apos;handles clicks&apos;</span>, () =&gt; {});
+});
+</code></pre>
+<p>Lets start with testing that it renders a <code>&lt;button&gt;</code>. To do that we first
+<code>shallow</code> render it, and then <code>expect</code> that a <code>&lt;button&gt;</code> node exists.</p>
+<pre><code class="lang-javascript">it(<span class="pl-s">&apos;renders a &lt;button&gt;&apos;</span>, () =&gt; {
+  <span class="pl-k">const</span> renderedComponent = shallow(
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span></span>
+  );
+  expect(
+    renderedComponent.find(<span class="pl-s">&quot;button&quot;</span>).node
+  ).toExist();
+});
+</code></pre>
+<p>Nice! If somebody breaks our button component by having it render an <code>&lt;a&gt;</code> tag
+or something else we&apos;ll immediately know! Let&apos;s do something a bit more advanced
+now, and check that our <code>&lt;Button&gt;</code> renders its children.</p>
+<p>We render our button component with some text, and then verify that our text
+exists:</p>
+<pre><code class="lang-javascript">it(<span class="pl-s">&apos;renders its children&apos;</span>, () =&gt; {
+  <span class="pl-k">const</span> text = <span class="pl-s">&quot;Click me!&quot;</span>;
+  <span class="pl-k">const</span> renderedComponent = shallow(
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Button</span>&gt;</span>{ text }<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span></span>
+  );
+  expect(
+    renderedComponent.contains(text)
+  ).toEqual(<span class="pl-c1">true</span>);
+});
+</code></pre>
+<p>Great! Onwards to our last and most advanced test: checking that our <code>&lt;Button&gt;</code> handles clicks correctly. We&apos;ll use a Spy for that. A Spy is a
+function that knows if, and how often, it has been called. We create the Spy
+(thoughtfully provided by <code>expect</code>), pass <em>it</em> as the <code>onClick</code> handler to our
+component, simulate a click on the rendered <code>&lt;button&gt;</code> element and, lastly,
+see that our Spy was called:</p>
+<pre><code class="lang-javascript">it(<span class="pl-s">&apos;handles clicks&apos;</span>, () =&gt; {
+  <span class="pl-k">const</span> onClickSpy = expect.createSpy();
+  <span class="pl-k">const</span> renderedComponent = shallow(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">onClick</span>=<span class="pl-s">{onClickSpy}</span> /&gt;</span>);
+  renderedComponent.find(&apos;button&apos;).simulate(&apos;click&apos;);
+  expect(onClickSpy).toHaveBeenCalled();
+});
+</span></code></pre>
+<p>And that&apos;s how you unit test your components and make sure they work correctly!</p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../testing/unit-testing.html"><span class="title">Unit Testing</span></a></div>
+          <div class="right"><a href="../testing/remote-testing.html"><span class="label">Next: </span><span class="title">Remote Testing</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

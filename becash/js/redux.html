@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=d358ee59">
+    <link rel="stylesheet" href="../css/becash.css?t=b7edf798">
+    <script src="../assets/script.js?t=42463e55"></script>
+    <title>Redux - BeCashReady Docs</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">BeCashReady Docs</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-general" href="../general/index.html">General</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-generalcommands" href="../general/commands.html">CLI Commands</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalfiles" href="../general/files.html">Tool Configuration</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalserver-configs" href="../general/server-configs.html">Server Configurations</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalfaq" href="../general/faq.html">FAQ</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalgotchas" href="../general/gotchas.html">Gotchas</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalremove" href="../general/remove.html">Remove</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Code Style Guides</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-styleguidesjs" href="../styleguides/js.html">JavaScript</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-styleguidescss" href="../styleguides/css.html">CSS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-styleguidesreact" href="../styleguides/react.html">React</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Contributing Code</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-gitgithub-flow" href="../git/github-flow.html">GitHub Flow</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-gitdeployment" href="../git/deployment.html">Deployment</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Submitting Bugs/Issues</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-issue_submissionissue_template" href="../issue_submission/issue_template.html">Issue Template</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-testing" href="../testing/index.html">Testing</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-testingunit-testing" href="../testing/unit-testing.html">Unit Testing</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-testingcomponent-testing" href="../testing/component-testing.html">Component Testing</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-testingremote-testing" href="../testing/remote-testing.html">Remote Testing</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-css" href="../css/index.html">CSS</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-csspostcss" href="../css/postcss.html">PostCSS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-csscss-modules" href="../css/css-modules.html">CSS Modules</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-csssanitize" href="../css/sanitize.html">sanitize.css</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-cssstylelint" href="../css/stylelint.html">stylelint.css</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-csssass" href="../css/sass.html">Using Sass</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-js" href="../js/index.html">JS</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title -active link-jsredux" href="../js/redux.html">Redux</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a class="hlink link-usage" href="#usage">Usage</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-removing-redux" href="#removing-redux">Removing redux</a>
+                      <ul class="heading-list -depth-2">
+                        <li class="heading-item -depth-3"><a class="hlink link-i'm-just-getting-started-and-flux-is-hard" href="#i'm-just-getting-started-and-flux-is-hard">I'm just getting started and Flux is hard</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-it's-overkill-for-my-project!" href="#it's-overkill-for-my-project!">It's overkill for my project!</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-i-prefer-(altormobxorsomethingelse)!" href="#i-prefer-(altormobxorsomethingelse)!">I prefer `(Alt|MobX|SomethingElse)`!</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsimmutablejs" href="../js/immutablejs.html">ImmutableJS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsreselect" href="../js/reselect.html">reselect</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsredux-saga" href="../js/redux-saga.html">redux-saga</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsi18n" href="../js/i18n.html">i18n</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsrouting" href="../js/routing.html">routing</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-jsredux">
+        <div class="header-nav">
+          <div class="right">
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="redux">Redux</h1>
+<p>If you haven&apos;t worked with Redux, it&apos;s highly recommended (possibly indispensable!)
+to read through the (amazing) <a href="http://redux.js.org">official documentation</a>
+and/or watch this <a href="https://egghead.io/series/getting-started-with-redux">free video tutorial series</a>.</p>
+<h2 id="usage">Usage</h2>
+<p>See above! As minimal as Redux is, the challenge it addresses - app state
+management - is a complex topic that is too involved to properly discuss here.</p>
+<h2 id="removing-redux">Removing redux</h2>
+<p>There are a few reasons why we chose to bundle redux with React Boilerplate, the
+biggest being that it is widely regarded as the current best Flux implementation
+in terms of architecture, support and documentation.</p>
+<p>You may feel differently! This is completely OK :)</p>
+<p>Below are a few reasons you might want to remove it:</p>
+<h3 id="i&apos;m-just-getting-started-and-flux-is-hard">I&apos;m just getting started and Flux is hard</h3>
+<p>You&apos;re under no obligation to use Redux or any other Flux library! The complexity
+of your application will determine the point at which you need to introduce it.</p>
+<p>Here are a couple of great resources for taking a minimal approach:</p>
+<ul>
+<li><a href="http://javascriptplayground.com/blog/2016/02/the-react-webpack-tooling-problem">Misconceptions of Tooling in JavaScript</a></li>
+<li><a href="http://jamesknelson.com/learn-raw-react-no-jsx-flux-es6-webpack/">Learn Raw React &#x2014; no JSX, no Flux, no ES6, no Webpack&#x2026;</a></li>
+</ul>
+<h3 id="it&apos;s-overkill-for-my-project!">It&apos;s overkill for my project!</h3>
+<p>See above.</p>
+<h3 id="i-prefer-(altormobxorsomethingelse)!">I prefer <code>(Alt|MobX|SomethingElse)</code>!</h3>
+<p>React Boilerplate is a baseline for <em>your</em> app: go for it!</p>
+<p>If you feel that we should take a closer look at supporting your preference
+out of the box, please let us know.</p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../js/index.html"><span class="title">JS</span></a></div>
+          <div class="right"><a href="../js/immutablejs.html"><span class="label">Next: </span><span class="title">ImmutableJS</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

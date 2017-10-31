@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=d358ee59">
+    <link rel="stylesheet" href="../css/becash.css?t=b7edf798">
+    <script src="../assets/script.js?t=42463e55"></script>
+    <title>FAQ - BeCashReady Docs</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">BeCashReady Docs</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-general" href="../general/index.html">General</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-generalcommands" href="../general/commands.html">CLI Commands</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalfiles" href="../general/files.html">Tool Configuration</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalserver-configs" href="../general/server-configs.html">Server Configurations</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title -active link-generalfaq" href="../general/faq.html">FAQ</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a class="hlink link-where-are-babel-eslint-and-stylelint-configured" href="#where-are-babel-eslint-and-stylelint-configured">Where are Babel, ESLint and stylelint configured?</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-where-are-the-files-coming-from-when-i-run-npm-start" href="#where-are-the-files-coming-from-when-i-run-npm-start">Where are the files coming from when I run `npm start`?</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-how-do-i-fix-error:-listen-eaddrinuse-127.0.0.1:3000" href="#how-do-i-fix-error:-listen-eaddrinuse-127.0.0.1:3000">How do I fix `Error: listen EADDRINUSE 127.0.0.1:3000`?</a>
+                      <ul class="heading-list -depth-2">
+                        <li class="heading-item -depth-3"><a class="hlink link-os-x-linux:" href="#os-x-linux:">OS X / Linux:</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-windows" href="#windows">Windows</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-local-webfonts-not-working-for-development" href="#local-webfonts-not-working-for-development">Local webfonts not working for development</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-non-route-containers" href="#non-route-containers">Non-route containers</a>
+                      <ul class="heading-list -depth-2">
+                        <li class="heading-item -depth-3"><a class="hlink link-where-do-i-put-the-reducer" href="#where-do-i-put-the-reducer">Where do I put the reducer?</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-how-do-i-run-the-saga" href="#how-do-i-run-the-saga">How do I run the saga?</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-using-this-boilerplate-with-webstorm" href="#using-this-boilerplate-with-webstorm">Using this boilerplate with WebStorm</a>
+                      <ul class="heading-list -depth-2">
+                        <li class="heading-item -depth-3"><a class="hlink link-troubleshooting" href="#troubleshooting">Troubleshooting</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-enable-eslint" href="#enable-eslint">Enable ESLint</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalgotchas" href="../general/gotchas.html">Gotchas</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalremove" href="../general/remove.html">Remove</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Code Style Guides</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-styleguidesjs" href="../styleguides/js.html">JavaScript</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-styleguidescss" href="../styleguides/css.html">CSS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-styleguidesreact" href="../styleguides/react.html">React</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Contributing Code</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-gitgithub-flow" href="../git/github-flow.html">GitHub Flow</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-gitdeployment" href="../git/deployment.html">Deployment</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Submitting Bugs/Issues</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-issue_submissionissue_template" href="../issue_submission/issue_template.html">Issue Template</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-testing" href="../testing/index.html">Testing</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-testingunit-testing" href="../testing/unit-testing.html">Unit Testing</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-testingcomponent-testing" href="../testing/component-testing.html">Component Testing</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-testingremote-testing" href="../testing/remote-testing.html">Remote Testing</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-css" href="../css/index.html">CSS</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-csspostcss" href="../css/postcss.html">PostCSS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-csscss-modules" href="../css/css-modules.html">CSS Modules</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-csssanitize" href="../css/sanitize.html">sanitize.css</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-cssstylelint" href="../css/stylelint.html">stylelint.css</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-csssass" href="../css/sass.html">Using Sass</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-js" href="../js/index.html">JS</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-jsredux" href="../js/redux.html">Redux</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsimmutablejs" href="../js/immutablejs.html">ImmutableJS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsreselect" href="../js/reselect.html">reselect</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsredux-saga" href="../js/redux-saga.html">redux-saga</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsi18n" href="../js/i18n.html">i18n</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsrouting" href="../js/routing.html">routing</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-generalfaq">
+        <div class="header-nav">
+          <div class="right">
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="frequently-asked-questions">Frequently Asked Questions</h1>
+<h2 id="where-are-babel-eslint-and-stylelint-configured">Where are Babel, ESLint and stylelint configured?</h2>
+<p>In package.json</p>
+<h2 id="where-are-the-files-coming-from-when-i-run-npm-start">Where are the files coming from when I run <code>npm start</code>?</h2>
+<p>In development Webpack compiles your application runs it in-memory. Only when
+you run <code>npm run build</code> will it write to disk and preserve your bundled
+application across computer restarts.</p>
+<h2 id="how-do-i-fix-error:-listen-eaddrinuse-127.0.0.1:3000">How do I fix <code>Error: listen EADDRINUSE 127.0.0.1:3000</code>?</h2>
+<p>This simply means that there&apos;s another process already listening on port 3000.
+The fix is to kill the process and rerun <code>npm start</code>.</p>
+<h3 id="os-x-linux:">OS X / Linux:</h3>
+<ol>
+<li>
+<p>Find the process id (PID):</p>
+<pre><code class="lang-Shell">ps aux | grep node
+</code></pre>
+<blockquote>
+<p>This will return the PID as the value following your username:</p>
+<pre><code class="lang-Shell">janedoe    29811  49.1  2.1  3394936 356956 s004  S+    4:45pm   2:40.07 node server
+</code></pre>
+</blockquote>
+</li>
+<li>
+<p>Then run</p>
+<pre><code class="lang-Shell">kill -9 YOUR_PID
+</code></pre>
+<blockquote>
+<p>e.g. given the output from the example above, <code>YOUR_PID</code> is <code>29811</code>, hence
+that would mean you would run <code>kill -9 29811</code></p>
+</blockquote>
+</li>
+</ol>
+<h3 id="windows">Windows</h3>
+<ol>
+<li>
+<p>Find the process id (PID):</p>
+<pre><code class="lang-Shell">netstat -a -o -n
+</code></pre>
+<blockquote>
+<p>This will return a list of running processes and the ports they&apos;re
+listening on:</p>
+<pre><code>Proto     Local Address     Foreign Address   State       PID
+TCP       0.0.0.0:25        0.0.0.0:0         Listening   4196
+...
+TCP       0.0.0.0:3000      0.0.0.0:0         Listening   28344
+</code></pre>
+</blockquote>
+<pre><code>
+</code></pre>
+</li>
+<li>
+<p>Then run</p>
+<pre><code class="lang-Shell">taskkill /F /PID YOUR_PID
+</code></pre>
+<blockquote>
+<p>e.g. given the output from the example above, <code>YOUR_PID</code> is <code>28344</code>, hence
+that would mean you would run <code>taskkill /F /PID 28344</code></p>
+</blockquote>
+</li>
+</ol>
+<h2 id="local-webfonts-not-working-for-development">Local webfonts not working for development</h2>
+<p>In development mode CSS sourcemaps require that styling is loaded by blob://,
+resulting in browsers resolving font files relative to the main document.</p>
+<p>A way to use local webfonts in development mode is to add an absolute
+output.publicPath in webpack.dev.babel.js, with protocol.</p>
+<pre><code class="lang-javascript"><span class="pl-c">// webpack.dev.babel.js</span>
+
+output: {
+  <span class="hljs-attr">publicPath</span>: <span class="pl-s">&apos;http://127.0.0.1:3000/&apos;</span>,
+  <span class="pl-c">/* &#x2026; */</span>
+},
+</code></pre>
+<h2 id="non-route-containers">Non-route containers</h2>
+<blockquote>
+<p>Note: Container will always be nested somewhere below a route. Even if there&apos;s dozens of components
+in between, somewhere up the tree will be route. (maybe only &quot;/&quot;, but still a route)</p>
+</blockquote>
+<h3 id="where-do-i-put-the-reducer">Where do I put the reducer?</h3>
+<p>While you can include the reducer statically in <code>reducers.js</code>, we don&apos;t recommend this as you lose
+the benefits of code splitting. Instead, add it as a <em>composed reducer</em>. This means that you
+pass actions onward to a second reducer from a lower-level route reducer like so:</p>
+<pre><code class="lang-JS"><span class="pl-c">// Main route reducer</span>
+
+<span class="hljs-function"><span class="pl-k">function</span> <span class="pl-ent">myReducerOfRoute</span>(<span class="hljs-params">state, action</span>) </span>{
+  <span class="pl-k">switch</span> (action.type) {
+    <span class="pl-k">case</span> SOME_OTHER_ACTION:
+      <span class="pl-k">return</span> someOtherReducer(state, action);
+  }
+}
+</code></pre>
+<p>That way, you still get the code splitting at route level, but avoid having a static <code>combineReducers</code>
+call that includes all of them by default.</p>
+<p><em>See <a href="https://egghead.io/lessons/javascript-redux-reducer-composition-with-arrays?course=getting-started-with-redux">this and the following lesson</a> of the <a href="http://egghead.io">egghead.io</a> Redux course for more information about reducer composition!</em></p>
+<h3 id="how-do-i-run-the-saga">How do I run the saga?</h3>
+<p>Since a container will always be within a route, one we can simply add it to the exported array in
+<code>sagas.js</code> of the route container somewhere up the tree:</p>
+<pre><code class="lang-JS"><span class="pl-c">// /containers/SomeContainer/sagas.js</span>
+
+<span class="pl-k">import</span> { someOtherSagaFromNestedContainer } <span class="pl-k">from</span> <span class="pl-s">&apos;./containers/SomeNestedContainer/sagas&apos;</span>;
+
+<span class="hljs-function"><span class="pl-k">function</span>* <span class="pl-ent">someSaga</span>(<span class="hljs-params"></span>) </span>{ <span class="pl-c">/* &#x2026; */</span> }
+
+<span class="pl-k">export</span> <span class="pl-k">default</span> [
+  someSaga,
+  someOtherSagaFromNestedContainer,
+];
+</code></pre>
+<p>Or, if you have multiple sagas in the nested container:</p>
+<pre><code class="lang-JS"><span class="pl-c">// /containers/SomeContainer/sagas.js</span>
+
+<span class="pl-k">import</span> nestedContainerSagas <span class="pl-k">from</span> <span class="pl-s">&apos;./containers/SomeNestedContainer/sagas&apos;</span>;
+
+<span class="hljs-function"><span class="pl-k">function</span>* <span class="pl-ent">someSaga</span>(<span class="hljs-params"></span>) </span>{ <span class="pl-c">/* &#x2026; */</span> }
+
+<span class="pl-k">export</span> <span class="pl-k">default</span> [
+  someSaga,
+  ...nestedContainerSagas,
+];
+</code></pre>
+<h2 id="using-this-boilerplate-with-webstorm">Using this boilerplate with WebStorm</h2>
+<p>WebStorm is a powerful IDE, and why not also use it as debugger tool? Here is the steps</p>
+<ol>
+<li><a href="https://chrome.google.com/webstore/detail/jetbrains-ide-support/hmhgeddbohgjknpmjagkdomcpobmllji">Install JetBrain Chrome Extension</a></li>
+<li><a href="https://www.jetbrains.com/help/webstorm/2016.1/using-jetbrains-chrome-extension.html">Setting up the PORT</a></li>
+<li>Change WebPack devtool config to <code>source-map</code> <a href="https://github.com/mxstbr/react-boilerplate/blob/56eb5a0ec4aa691169ef427f3a0122fde5a5aa24/internals/webpack/webpack.dev.babel.js#L65">(This line)</a></li>
+<li>Run web server (<code>npm run start</code>)</li>
+<li>Create Run Configuration (Run &gt; Edit Configurations)</li>
+<li>Add new <code>JavaScript Debug</code></li>
+<li>Setting up URL</li>
+<li>Start Debug (Click the green bug button)</li>
+<li>Edit Run Configuration Again</li>
+<li>Mapping Url as below picture</li>
+</ol>
+<pre><code>* Map your `root` directory with `webpack://.` (please note the last dot)
+* Map your `build` directory with your root path (e.g. `http://localhost:3000`)
+</code></pre>
+<ol start="11">
+<li>Hit OK and restart debugging session</li>
+</ol>
+<p><img src="webstorm-debug.png" alt="How to debug using WebStorm"></p>
+<h3 id="troubleshooting">Troubleshooting</h3>
+<ol>
+<li>You miss the last <code>.</code> (dot) in <code>webpack://.</code></li>
+<li>The port debugger is listening tool and the JetBrain extension is mismatch.</li>
+</ol>
+<h3 id="enable-eslint">Enable ESLint</h3>
+<p>ESLint help making all developer follow the same coding format. Please also setting up in your IDE, otherwise, you will fail ESLint test.</p>
+<ol>
+<li>Go to WebStorm Preference</li>
+<li>Search for <code>ESLint</code></li>
+<li>Click <code>Enable</code></li>
+</ol>
+<p><img src="webstorm-eslint.png" alt="Setting up ESLint"></p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../general/server-configs.html"><span class="title">Server Configurations</span></a></div>
+          <div class="right"><a href="../general/gotchas.html"><span class="label">Next: </span><span class="title">Gotchas</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+---
+title: Arrow
+recaptchacontact:
+    enabled: false
+---
+
+<svg version="1.1" id="home-process-arrow-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="3px" height="63px" viewBox="0 0 3 63" style="enable-background:new 0 0 3 63;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#A8F4B5;stroke-width:3;stroke-linecap:round;stroke-dasharray:1.000000e-03,6;}
+</style>
+<path id="Shape_1_copy" class="st0" d="M1.5,1.5v64.4"/>
+</svg>

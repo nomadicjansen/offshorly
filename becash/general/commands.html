@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=d358ee59">
+    <link rel="stylesheet" href="../css/becash.css?t=b7edf798">
+    <script src="../assets/script.js?t=42463e55"></script>
+    <title>CLI Commands - BeCashReady Docs</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">BeCashReady Docs</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-general" href="../general/index.html">General</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title -active link-generalcommands" href="../general/commands.html">CLI Commands</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a class="hlink link-development-mode" href="#development-mode">Development Mode</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-cleaning" href="#cleaning">Cleaning</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-generators" href="#generators">Generators</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-server" href="#server">Server</a>
+                      <ul class="heading-list -depth-2">
+                        <li class="heading-item -depth-3"><a class="hlink link-development" href="#development">Development</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-production" href="#production">Production</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-port" href="#port">Port</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-building" href="#building">Building</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-testing" href="#testing">Testing</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-unit-testing" href="#unit-testing">Unit testing</a>
+                      <ul class="heading-list -depth-2">
+                        <li class="heading-item -depth-3"><a class="hlink link-browsers" href="#browsers">Browsers</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-watching" href="#watching">Watching</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-remote-testing" href="#remote-testing">Remote testing</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-performance-testing" href="#performance-testing">Performance testing</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-dependency-size-test" href="#dependency-size-test">Dependency size test</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-linting" href="#linting">Linting</a>
+                      <ul class="heading-list -depth-2">
+                        <li class="heading-item -depth-3"><a class="hlink link-javascript" href="#javascript">JavaScript</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-css" href="#css">CSS</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalfiles" href="../general/files.html">Tool Configuration</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalserver-configs" href="../general/server-configs.html">Server Configurations</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalfaq" href="../general/faq.html">FAQ</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalgotchas" href="../general/gotchas.html">Gotchas</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalremove" href="../general/remove.html">Remove</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Code Style Guides</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-styleguidesjs" href="../styleguides/js.html">JavaScript</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-styleguidescss" href="../styleguides/css.html">CSS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-styleguidesreact" href="../styleguides/react.html">React</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Contributing Code</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-gitgithub-flow" href="../git/github-flow.html">GitHub Flow</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-gitdeployment" href="../git/deployment.html">Deployment</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Submitting Bugs/Issues</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-issue_submissionissue_template" href="../issue_submission/issue_template.html">Issue Template</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-testing" href="../testing/index.html">Testing</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-testingunit-testing" href="../testing/unit-testing.html">Unit Testing</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-testingcomponent-testing" href="../testing/component-testing.html">Component Testing</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-testingremote-testing" href="../testing/remote-testing.html">Remote Testing</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-css" href="../css/index.html">CSS</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-csspostcss" href="../css/postcss.html">PostCSS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-csscss-modules" href="../css/css-modules.html">CSS Modules</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-csssanitize" href="../css/sanitize.html">sanitize.css</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-cssstylelint" href="../css/stylelint.html">stylelint.css</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-csssass" href="../css/sass.html">Using Sass</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-js" href="../js/index.html">JS</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-jsredux" href="../js/redux.html">Redux</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsimmutablejs" href="../js/immutablejs.html">ImmutableJS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsreselect" href="../js/reselect.html">reselect</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsredux-saga" href="../js/redux-saga.html">redux-saga</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsi18n" href="../js/i18n.html">i18n</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsrouting" href="../js/routing.html">routing</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-generalcommands">
+        <div class="header-nav">
+          <div class="right">
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="command-line-commands">Command Line Commands</h1>
+<h2 id="development-mode">Development Mode</h2>
+<pre><code class="lang-Shell">npm run start
+</code></pre>
+<p>Starts the development server running on <code>http://localhost:3000</code></p>
+<h2 id="cleaning">Cleaning</h2>
+<pre><code class="lang-Shell">npm run clean
+</code></pre>
+<p>Deletes the example app, replacing it with the smallest amount of boilerplate
+code necessary to start writing your app!</p>
+<blockquote>
+<p>Note: This command is self-destructive, once you&apos;ve run it you cannot run it
+again. This is for your own safety, so you can&apos;t delete portions of your project
+irreversibly by accident.</p>
+</blockquote>
+<h2 id="generators">Generators</h2>
+<pre><code class="lang-Shell">npm run generate
+</code></pre>
+<p>Allows you to auto-generate boilerplate code for common parts of your
+application, specifically <code>component</code>s, <code>container</code>s, and <code>route</code>s. You can
+also run <code>npm run generate &lt;part&gt;</code> to skip the first selection. (e.g. <code>npm run generate container</code>)</p>
+<h2 id="server">Server</h2>
+<h3 id="development">Development</h3>
+<pre><code class="lang-Shell">npm start
+</code></pre>
+<p>Starts the development server and makes your application accessible at
+<code>localhost:3000</code>. Tunnels that server with <code>ngrok</code>, which means the website
+accessible anywhere! Changes in the application code will be hot-reloaded.</p>
+<h3 id="production">Production</h3>
+<pre><code class="lang-Shell">npm run start:prod
+</code></pre>
+<p>Starts the production server, configured for optimal performance: assets are
+minified and served gzipped.</p>
+<h3 id="port">Port</h3>
+<p>To change the port the app is accessible at pass the <code>--port</code> option to the command
+with <code>--</code>. E.g. to make the app visible at <code>localhost:5000</code>, run the following:
+<code>npm start -- --port 5000</code></p>
+<h2 id="building">Building</h2>
+<pre><code class="lang-Shell">npm run build
+</code></pre>
+<p>Preps your app for deployment. Optimizes and minifies all files, piping them to
+a folder called <code>build</code>. Upload the contents of <code>build</code> to your web server to
+see your work live!</p>
+<h2 id="testing">Testing</h2>
+<p>See the <a href="../testing/index.html">testing documentation</a> for detailed information
+about our testing setup!</p>
+<h2 id="unit-testing">Unit testing</h2>
+<pre><code class="lang-Shell">npm run test
+</code></pre>
+<p>Tests your application with the unit tests specified in the <code>*test.js</code> files
+throughout the application.
+All the <code>test</code> commands allow an optional <code>-- --grep string</code> argument to filter
+the tests ran by Karma. Useful if you need to run a specific test only.</p>
+<pre><code class="lang-Shell"># Run only the Button component tests
+npm run test:watch -- --grep Button
+</code></pre>
+<h3 id="browsers">Browsers</h3>
+<p>To choose the browser to run your unit tests in (Chrome by default), run one of
+the following commands:</p>
+<h4 id="firefox">Firefox</h4>
+<pre><code class="lang-Shell">npm run test:firefox
+</code></pre>
+<h4 id="safari">Safari</h4>
+<pre><code class="lang-Shell">npm run test:safari
+</code></pre>
+<h4 id="internet-explorer">Internet Explorer</h4>
+<p><em>Windows only!</em></p>
+<pre><code class="lang-Shell">npm run test:ie
+</code></pre>
+<h3 id="watching">Watching</h3>
+<pre><code class="lang-Shell">npm run test:watch
+</code></pre>
+<p>Watches changes to your application and reruns tests whenever a file changes.</p>
+<h3 id="remote-testing">Remote testing</h3>
+<pre><code class="lang-Shell">npm run start:tunnel
+</code></pre>
+<p>Starts the development server and tunnels it with <code>ngrok</code>, making the website
+available on the entire world. Useful for testing on different devices in different locations!</p>
+<h3 id="performance-testing">Performance testing</h3>
+<pre><code class="lang-Shell">npm run pagespeed
+</code></pre>
+<p>With the remote server running (i.e. while <code>npm run start:prod</code> is running in
+another terminal session), enter this command to run Google PageSpeed Insights
+and get a performance check right in your terminal!</p>
+<h3 id="dependency-size-test">Dependency size test</h3>
+<pre><code class="lang-Shell">npm run analyze
+</code></pre>
+<p>This command will generate a <code>stats.json</code> file from your production build, which
+you can upload to the <a href="https://webpack.github.io/analyse/">webpack analyzer</a>. This
+analyzer will visualize your dependencies and chunks with detailed statistics
+about the bundle size.</p>
+<h2 id="linting">Linting</h2>
+<pre><code class="lang-Shell">npm run lint
+</code></pre>
+<p>Lints your JavaScript and CSS.</p>
+<h3 id="javascript">JavaScript</h3>
+<pre><code class="lang-Shell">npm run lint:js
+</code></pre>
+<p>Only lints your JavaScript.</p>
+<h3 id="css">CSS</h3>
+<pre><code class="lang-Shell">npm run lint:css
+</code></pre>
+<p>Only lints your CSS.</p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../general/index.html"><span class="title">General</span></a></div>
+          <div class="right"><a href="../general/files.html"><span class="label">Next: </span><span class="title">Tool Configuration</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

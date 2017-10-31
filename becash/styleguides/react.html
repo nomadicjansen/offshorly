@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=d358ee59">
+    <link rel="stylesheet" href="../css/becash.css?t=b7edf798">
+    <script src="../assets/script.js?t=42463e55"></script>
+    <title>React - BeCashReady Docs</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">BeCashReady Docs</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-general" href="../general/index.html">General</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-generalcommands" href="../general/commands.html">CLI Commands</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalfiles" href="../general/files.html">Tool Configuration</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalserver-configs" href="../general/server-configs.html">Server Configurations</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalfaq" href="../general/faq.html">FAQ</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalgotchas" href="../general/gotchas.html">Gotchas</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalremove" href="../general/remove.html">Remove</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Code Style Guides</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-styleguidesjs" href="../styleguides/js.html">JavaScript</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-styleguidescss" href="../styleguides/css.html">CSS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title -active link-styleguidesreact" href="../styleguides/react.html">React</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a class="hlink link-table-of-contents" href="#table-of-contents">Table of Contents</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-basic-rules" href="#basic-rules">Basic Rules</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-class-vs-react.createclass-vs-stateless" href="#class-vs-react.createclass-vs-stateless">Class vs `React.createClass` vs stateless</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-naming" href="#naming">Naming</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-declaration" href="#declaration">Declaration</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-alignment" href="#alignment">Alignment</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-quotes" href="#quotes">Quotes</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-spacing" href="#spacing">Spacing</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-props" href="#props">Props</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-refs" href="#refs">Refs</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-parentheses" href="#parentheses">Parentheses</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-tags" href="#tags">Tags</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-methods" href="#methods">Methods</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-ordering" href="#ordering">Ordering</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-ismounted" href="#ismounted">`isMounted`</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-translation" href="#translation">Translation</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Contributing Code</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-gitgithub-flow" href="../git/github-flow.html">GitHub Flow</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-gitdeployment" href="../git/deployment.html">Deployment</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Submitting Bugs/Issues</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-issue_submissionissue_template" href="../issue_submission/issue_template.html">Issue Template</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-testing" href="../testing/index.html">Testing</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-testingunit-testing" href="../testing/unit-testing.html">Unit Testing</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-testingcomponent-testing" href="../testing/component-testing.html">Component Testing</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-testingremote-testing" href="../testing/remote-testing.html">Remote Testing</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-css" href="../css/index.html">CSS</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-csspostcss" href="../css/postcss.html">PostCSS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-csscss-modules" href="../css/css-modules.html">CSS Modules</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-csssanitize" href="../css/sanitize.html">sanitize.css</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-cssstylelint" href="../css/stylelint.html">stylelint.css</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-csssass" href="../css/sass.html">Using Sass</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-js" href="../js/index.html">JS</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-jsredux" href="../js/redux.html">Redux</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsimmutablejs" href="../js/immutablejs.html">ImmutableJS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsreselect" href="../js/reselect.html">reselect</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsredux-saga" href="../js/redux-saga.html">redux-saga</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsi18n" href="../js/i18n.html">i18n</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsrouting" href="../js/routing.html">routing</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-styleguidesreact">
+        <div class="header-nav">
+          <div class="right">
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="reactjsx-style-guide">React/JSX Style Guide</h1>
+<p><em>A mostly reasonable approach to React and JSX</em></p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#basic-rules">Basic Rules</a></li>
+<li><a href="#class-vs-reactcreateclass-vs-stateless">Class vs <code>React.createClass</code> vs stateless</a></li>
+<li><a href="#naming">Naming</a></li>
+<li><a href="#declaration">Declaration</a></li>
+<li><a href="#alignment">Alignment</a></li>
+<li><a href="#quotes">Quotes</a></li>
+<li><a href="#spacing">Spacing</a></li>
+<li><a href="#props">Props</a></li>
+<li><a href="#refs">Refs</a></li>
+<li><a href="#parentheses">Parentheses</a></li>
+<li><a href="#tags">Tags</a></li>
+<li><a href="#methods">Methods</a></li>
+<li><a href="#ordering">Ordering</a></li>
+<li><a href="#ismounted"><code>isMounted</code></a></li>
+</ol>
+<h2 id="basic-rules">Basic Rules</h2>
+<ul>
+<li>Only include one React component per file.
+<ul>
+<li>However, multiple <a href="https://facebook.github.io/react/docs/reusable-components.html#stateless-functions">Stateless, or Pure, Components</a> are allowed per file. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md#ignorestateless"><code>react/no-multi-comp</code></a>.</li>
+</ul>
+</li>
+<li>Always use JSX syntax.</li>
+<li>Do not use <code>React.createElement</code> unless you&apos;re initializing the app from a file that is not JSX.</li>
+</ul>
+<h2 id="class-vs-react.createclass-vs-stateless">Class vs <code>React.createClass</code> vs stateless</h2>
+<ul>
+<li>
+<p>If you have internal state and/or refs, prefer <code>class extends React.Component</code> over <code>React.createClass</code> unless you have a very good reason to use mixins. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md"><code>react/prefer-es6-class</code></a> <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md"><code>react/prefer-stateless-function</code></a></p>
+<pre><code class="lang-jsx"><span class="pl-c">// bad</span>
+<span class="pl-k">const</span> Listing = React.createClass({
+  <span class="pl-c">// ...</span>
+  render() {
+    <span class="pl-k">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>{this.state.hello}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+  }
+});
+
+<span class="pl-c">// good</span>
+<span class="hljs-class"><span class="pl-k">class</span> <span class="pl-ent">Listing</span> <span class="pl-k">extends</span> <span class="pl-ent">React</span>.<span class="pl-ent">Component</span> </span>{
+  <span class="pl-c">// ...</span>
+  render() {
+    <span class="pl-k">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>{this.state.hello}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+  }
+}
+</code></pre>
+<p>And if you don&apos;t have state or refs, prefer normal functions (not arrow functions) over classes:</p>
+<pre><code class="lang-jsx"><span class="pl-c">// bad</span>
+<span class="hljs-class"><span class="pl-k">class</span> <span class="pl-ent">Listing</span> <span class="pl-k">extends</span> <span class="pl-ent">React</span>.<span class="pl-ent">Component</span> </span>{
+  render() {
+    <span class="pl-k">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>{this.props.hello}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+  }
+}
+
+<span class="pl-c">// bad (relying on function name inference is discouraged)</span>
+<span class="pl-k">const</span> Listing = <span class="hljs-function">(<span class="hljs-params">{ hello }</span>) =&gt;</span> (
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>{hello}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+);
+
+<span class="pl-c">// good</span>
+<span class="hljs-function"><span class="pl-k">function</span> <span class="pl-ent">Listing</span>(<span class="hljs-params">{ hello }</span>) </span>{
+  <span class="pl-k">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>{hello}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+}
+</code></pre>
+</li>
+</ul>
+<h2 id="naming">Naming</h2>
+<ul>
+<li>
+<p><strong>Filename</strong>: Use PascalCase for filenames. E.g., <code>ReservationCard.jsx</code>.</p>
+</li>
+<li>
+<p><strong>Reference Naming</strong>: Use PascalCase for React components and camelCase for their instances. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md"><code>react/jsx-pascal-case</code></a></p>
+<pre><code class="lang-jsx"><span class="pl-c">// bad</span>
+<span class="pl-k">import</span> reservationCard <span class="pl-k">from</span> <span class="pl-s">&apos;./ReservationCard&apos;</span>;
+
+<span class="pl-c">// good</span>
+<span class="pl-k">import</span> ReservationCard <span class="pl-k">from</span> <span class="pl-s">&apos;./ReservationCard&apos;</span>;
+
+<span class="pl-c">// bad</span>
+<span class="pl-k">const</span> ReservationItem = <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ReservationCard</span> /&gt;</span>;
+
+// good
+const reservationItem = <span class="hljs-tag">&lt;<span class="hljs-name">ReservationCard</span> /&gt;</span>;
+</span></code></pre>
+</li>
+<li>
+<p><strong>Component Naming</strong>: Use the filename as the component name. For example, <code>ReservationCard.jsx</code> should have a reference name of <code>ReservationCard</code>. However, for root components of a directory, use <code>index.jsx</code> as the filename and use the directory name as the component name:</p>
+<pre><code class="lang-jsx"><span class="pl-c">// bad</span>
+<span class="pl-k">import</span> Footer <span class="pl-k">from</span> <span class="pl-s">&apos;./Footer/Footer&apos;</span>;
+
+<span class="pl-c">// bad</span>
+<span class="pl-k">import</span> Footer <span class="pl-k">from</span> <span class="pl-s">&apos;./Footer/index&apos;</span>;
+
+<span class="pl-c">// good</span>
+<span class="pl-k">import</span> Footer <span class="pl-k">from</span> <span class="pl-s">&apos;./Footer&apos;</span>;
+</code></pre>
+</li>
+<li>
+<p><strong>Higher-order Component Naming</strong>: Use a composite of the higher-order component&apos;s name and the passed-in component&apos;s name as the <code>displayName</code> on the generated component. For example, the higher-order component <code>withFoo()</code>, when passed a component <code>Bar</code> should produce a component with a <code>displayName</code> of <code>withFoo(Bar)</code>.</p>
+</li>
+</ul>
+<blockquote>
+<p>Why? A component&apos;s <code>displayName</code> may be used by developer tools or in error messages, and having a value that clearly expresses this relationship helps people understand what is happening.</p>
+</blockquote>
+<pre><code>```jsx
+// bad
+export default function withFoo(WrappedComponent) {
+  return function WithFoo(props) {
+    return &lt;WrappedComponent {...props} foo /&gt;;
+  }
+}
+
+// good
+export default function withFoo(WrappedComponent) {
+  function WithFoo(props) {
+    return &lt;WrappedComponent {...props} foo /&gt;;
+  }
+
+  const wrappedComponentName = WrappedComponent.displayName
+    || WrappedComponent.name
+    || &apos;Component&apos;;
+
+  WithFoo.displayName = `withFoo(${wrappedComponentName})`;
+  return WithFoo;
+}
+```
+</code></pre>
+<ul>
+<li><strong>Props Naming</strong>: Avoid using DOM component prop names for different purposes.</li>
+</ul>
+<blockquote>
+<p>Why? People expect props like <code>style</code> and <code>className</code> to mean one specific thing. Varying this API for a subset of your app makes the code less readable and less maintainable, and may cause bugs.</p>
+</blockquote>
+<pre><code>```jsx
+// bad
+&lt;MyComponent style=&quot;fancy&quot; /&gt;
+
+// good
+&lt;MyComponent variant=&quot;fancy&quot; /&gt;
+```
+</code></pre>
+<h2 id="declaration">Declaration</h2>
+<ul>
+<li>
+<p>Do not use <code>displayName</code> for naming components. Instead, name the component by reference.</p>
+<pre><code class="lang-jsx"><span class="pl-c">// bad</span>
+<span class="pl-k">export</span> <span class="pl-k">default</span> React.createClass({
+  <span class="hljs-attr">displayName</span>: <span class="pl-s">&apos;ReservationCard&apos;</span>,
+  <span class="pl-c">// stuff goes here</span>
+});
+
+<span class="pl-c">// good</span>
+<span class="pl-k">export</span> <span class="pl-k">default</span> <span class="hljs-class"><span class="pl-k">class</span> <span class="pl-ent">ReservationCard</span> <span class="pl-k">extends</span> <span class="pl-ent">React</span>.<span class="pl-ent">Component</span> </span>{
+}
+</code></pre>
+</li>
+</ul>
+<h2 id="alignment">Alignment</h2>
+<ul>
+<li>
+<p>Follow these alignment styles for JSX syntax. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md"><code>react/jsx-closing-bracket-location</code></a></p>
+<pre><code class="lang-jsx"><span class="pl-c">// bad</span>
+&lt;Foo superLongParam=<span class="pl-s">&quot;bar&quot;</span>
+     anotherSuperLongParam=<span class="pl-s">&quot;baz&quot;</span> /&gt;
+
+<span class="pl-c">// good</span>
+&lt;Foo
+  superLongParam=<span class="pl-s">&quot;bar&quot;</span>
+  anotherSuperLongParam=<span class="pl-s">&quot;baz&quot;</span>
+/&gt;
+
+<span class="pl-c">// if props fit in one line then keep it on the same line</span>
+&lt;Foo bar=<span class="pl-s">&quot;bar&quot;</span> /&gt;
+
+<span class="pl-c">// children get indented normally</span>
+&lt;Foo
+  superLongParam=<span class="pl-s">&quot;bar&quot;</span>
+  anotherSuperLongParam=<span class="pl-s">&quot;baz&quot;</span>
+&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Quux</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">Foo</span>&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+<h2 id="quotes">Quotes</h2>
+<ul>
+<li>Always use double quotes (<code>&quot;</code>) for JSX attributes, but single quotes for all other JS. eslint: <a href="http://eslint.org/docs/rules/jsx-quotes"><code>jsx-quotes</code></a></li>
+</ul>
+<blockquote>
+<p>Why? JSX attributes <a href="http://eslint.org/docs/rules/jsx-quotes">can&apos;t contain escaped quotes</a>, so double quotes make contractions like <code>&quot;don&apos;t&quot;</code> easier to type.
+Regular HTML attributes also typically use double quotes instead of single, so JSX attributes mirror this convention.</p>
+</blockquote>
+<pre><code>```jsx
+// bad
+&lt;Foo bar=&apos;bar&apos; /&gt;
+
+// good
+&lt;Foo bar=&quot;bar&quot; /&gt;
+
+// bad
+&lt;Foo style={{ left: &quot;20px&quot; }} /&gt;
+
+// good
+&lt;Foo style={{ left: &apos;20px&apos; }} /&gt;
+```
+</code></pre>
+<h2 id="spacing">Spacing</h2>
+<ul>
+<li>
+<p>Always include a single space in your self-closing tag.</p>
+<pre><code class="lang-jsx"><span class="pl-c">// bad</span>
+&lt;Foo/&gt;
+
+<span class="pl-c">// very bad</span>
+&lt;Foo                 /&gt;
+
+<span class="pl-c">// bad</span>
+&lt;Foo
+ /&gt;
+
+<span class="pl-c">// good</span>
+&lt;Foo /&gt;
+</code></pre>
+</li>
+<li>
+<p>Do not pad JSX curly braces with spaces. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md"><code>react/jsx-curly-spacing</code></a></p>
+<pre><code class="lang-jsx"><span class="pl-c">// bad</span>
+&lt;Foo bar={ baz } /&gt;
+
+<span class="pl-c">// good</span>
+&lt;Foo bar={baz} /&gt;
+</code></pre>
+</li>
+</ul>
+<h2 id="props">Props</h2>
+<ul>
+<li>
+<p>Always use camelCase for prop names.</p>
+<pre><code class="lang-jsx"><span class="pl-c">// bad</span>
+&lt;Foo
+  UserName=<span class="pl-s">&quot;hello&quot;</span>
+  phone_number={<span class="hljs-number">12345678</span>}
+/&gt;
+
+<span class="pl-c">// good</span>
+&lt;Foo
+  userName=<span class="pl-s">&quot;hello&quot;</span>
+  phoneNumber={<span class="hljs-number">12345678</span>}
+/&gt;
+</code></pre>
+</li>
+<li>
+<p>Omit the value of the prop when it is explicitly <code>true</code>. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md"><code>react/jsx-boolean-value</code></a></p>
+<pre><code class="lang-jsx"><span class="pl-c">// bad</span>
+&lt;Foo
+  hidden={<span class="pl-c1">true</span>}
+/&gt;
+
+<span class="pl-c">// good</span>
+&lt;Foo
+  hidden
+/&gt;
+</code></pre>
+</li>
+<li>
+<p>Always include an <code>alt</code> prop on <code>&lt;img&gt;</code> tags. If the image is presentational, <code>alt</code> can be an empty string or the <code>&lt;img&gt;</code> must have <code>role=&quot;presentation&quot;</code>. eslint: <a href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/img-has-alt.md"><code>jsx-a11y/img-has-alt</code></a></p>
+<pre><code class="lang-jsx"><span class="pl-c">// bad</span>
+&lt;img src=<span class="pl-s">&quot;hello.jpg&quot;</span> /&gt;
+
+<span class="pl-c">// good</span>
+&lt;img src=<span class="pl-s">&quot;hello.jpg&quot;</span> alt=<span class="pl-s">&quot;Me waving hello&quot;</span> /&gt;
+
+<span class="pl-c">// good</span>
+&lt;img src=<span class="pl-s">&quot;hello.jpg&quot;</span> alt=<span class="pl-s">&quot;&quot;</span> /&gt;
+
+<span class="pl-c">// good</span>
+&lt;img src=<span class="pl-s">&quot;hello.jpg&quot;</span> role=<span class="pl-s">&quot;presentation&quot;</span> /&gt;
+</code></pre>
+</li>
+<li>
+<p>Do not use words like &quot;image&quot;, &quot;photo&quot;, or &quot;picture&quot; in <code>&lt;img&gt;</code> <code>alt</code> props. eslint: <a href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/img-redundant-alt.md"><code>jsx-a11y/img-redundant-alt</code></a></p>
+</li>
+</ul>
+<blockquote>
+<p>Why? Screenreaders already announce <code>img</code> elements as images, so there is no need to include this information in the alt text.</p>
+</blockquote>
+<pre><code>```jsx
+// bad
+&lt;img src=&quot;hello.jpg&quot; alt=&quot;Picture of me waving hello&quot; /&gt;
+
+// good
+&lt;img src=&quot;hello.jpg&quot; alt=&quot;Me waving hello&quot; /&gt;
+```
+</code></pre>
+<ul>
+<li>
+<p>Use only valid, non-abstract <a href="https://www.w3.org/TR/wai-aria/roles#role_definitions">ARIA roles</a>. eslint: <a href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-role.md"><code>jsx-a11y/aria-role</code></a></p>
+<pre><code class="lang-jsx"><span class="pl-c">// bad - not an ARIA role</span>
+&lt;div role=<span class="pl-s">&quot;datepicker&quot;</span> /&gt;
+
+<span class="pl-c">// bad - abstract ARIA role</span>
+&lt;div role=<span class="pl-s">&quot;range&quot;</span> /&gt;
+
+<span class="pl-c">// good</span>
+&lt;div role=<span class="pl-s">&quot;button&quot;</span> /&gt;
+</code></pre>
+</li>
+<li>
+<p>Do not use <code>accessKey</code> on elements. eslint: <a href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-access-key.md"><code>jsx-a11y/no-access-key</code></a></p>
+</li>
+</ul>
+<blockquote>
+<p>Why? Inconsistencies between keyboard shortcuts and keyboard commands used by people using screenreaders and keyboards complicate accessibility.</p>
+</blockquote>
+<pre><code class="lang-jsx"><span class="pl-c">// bad</span>
+&lt;div accessKey=<span class="pl-s">&quot;h&quot;</span> /&gt;
+
+<span class="pl-c">// good</span>
+&lt;div /&gt;
+</code></pre>
+<ul>
+<li>Avoid using an array index as <code>key</code> prop, prefer a unique ID. (<a href="https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318">why?</a>)</li>
+</ul>
+<pre><code class="lang-jsx"><span class="pl-c">// bad</span>
+{todos.map(<span class="hljs-function">(<span class="hljs-params">todo, index</span>) =&gt;</span>
+  &lt;Todo
+    {...todo}
+    key={index}
+  /&gt;
+)}
+
+<span class="pl-c">// good</span>
+{todos.map(<span class="hljs-function"><span class="hljs-params">todo</span> =&gt;</span> (
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Todo</span>
+    {<span class="hljs-attr">...todo</span>}
+    <span class="hljs-attr">key</span>=<span class="pl-s">{todo.id}</span>
+  /&gt;</span>
+))}
+</span></code></pre>
+<h2 id="refs">Refs</h2>
+<ul>
+<li>
+<p>Always use ref callbacks. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md"><code>react/no-string-refs</code></a></p>
+<pre><code class="lang-jsx"><span class="pl-c">// bad</span>
+&lt;Foo
+  ref=<span class="pl-s">&quot;myRef&quot;</span>
+/&gt;
+
+<span class="pl-c">// good</span>
+&lt;Foo
+  ref={ref =&gt; { <span class="pl-k">this</span>.myRef = ref; }}
+/&gt;
+</code></pre>
+</li>
+</ul>
+<h2 id="parentheses">Parentheses</h2>
+<ul>
+<li>
+<p>Wrap JSX tags in parentheses when they span more than one line. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/wrap-multilines.md"><code>react/wrap-multilines</code></a></p>
+<pre><code class="lang-jsx"><span class="pl-c">// bad</span>
+render() {
+  <span class="pl-k">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">MyComponent</span> <span class="hljs-attr">className</span>=<span class="pl-s">&quot;long body&quot;</span> <span class="hljs-attr">foo</span>=<span class="pl-s">&quot;bar&quot;</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">MyChild</span> /&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">MyComponent</span>&gt;</span></span>;
+}
+
+<span class="pl-c">// good</span>
+render() {
+  <span class="pl-k">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">MyComponent</span> <span class="hljs-attr">className</span>=<span class="pl-s">&quot;long body&quot;</span> <span class="hljs-attr">foo</span>=<span class="pl-s">&quot;bar&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">MyChild</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">MyComponent</span>&gt;</span></span>
+  );
+}
+
+<span class="pl-c">// good, when single line</span>
+render() {
+  <span class="pl-k">const</span> body = <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>hello<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+  <span class="pl-k">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">MyComponent</span>&gt;</span>{body}<span class="hljs-tag">&lt;/<span class="hljs-name">MyComponent</span>&gt;</span></span>;
+}
+</code></pre>
+</li>
+</ul>
+<h2 id="tags">Tags</h2>
+<ul>
+<li>
+<p>Always self-close tags that have no children. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md"><code>react/self-closing-comp</code></a></p>
+<pre><code class="lang-jsx"><span class="pl-c">// bad</span>
+&lt;Foo className=<span class="pl-s">&quot;stuff&quot;</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">Foo</span>&gt;</span></span>
+
+<span class="pl-c">// good</span>
+&lt;Foo className=<span class="pl-s">&quot;stuff&quot;</span> /&gt;
+</code></pre>
+</li>
+<li>
+<p>If your component has multi-line properties, close its tag on a new line. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md"><code>react/jsx-closing-bracket-location</code></a></p>
+<pre><code class="lang-jsx"><span class="pl-c">// bad</span>
+&lt;Foo
+  bar=<span class="pl-s">&quot;bar&quot;</span>
+  baz=<span class="pl-s">&quot;baz&quot;</span> /&gt;
+
+<span class="pl-c">// good</span>
+&lt;Foo
+  bar=<span class="pl-s">&quot;bar&quot;</span>
+  baz=<span class="pl-s">&quot;baz&quot;</span>
+/&gt;
+</code></pre>
+</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li>
+<p>Use arrow functions to close over local variables.</p>
+<pre><code class="lang-jsx"><span class="hljs-function"><span class="pl-k">function</span> <span class="pl-ent">ItemList</span>(<span class="hljs-params">props</span>) </span>{
+  <span class="pl-k">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      {props.items.map((item, index) =&gt; (
+        <span class="hljs-tag">&lt;<span class="hljs-name">Item</span>
+          <span class="hljs-attr">key</span>=<span class="pl-s">{item.key}</span>
+          <span class="hljs-attr">onClick</span>=<span class="pl-s">{()</span> =&gt;</span> doSomethingWith(item.name, index)}
+        /&gt;
+      ))}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  );
+}
+</span></code></pre>
+</li>
+<li>
+<p>Bind event handlers for the render method in the constructor. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md"><code>react/jsx-no-bind</code></a></p>
+</li>
+</ul>
+<blockquote>
+<p>Why? A bind call in the render path creates a brand new function on every single render.</p>
+</blockquote>
+<pre><code>```jsx
+// bad
+class extends React.Component {
+  onClickDiv() {
+    // do stuff
+  }
+
+  render() {
+    return &lt;div onClick={this.onClickDiv.bind(this)} /&gt;
+  }
+}
+
+// good
+class extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.onClickDiv = this.onClickDiv.bind(this);
+  }
+
+  onClickDiv() {
+    // do stuff
+  }
+
+  render() {
+    return &lt;div onClick={this.onClickDiv} /&gt;
+  }
+}
+```
+</code></pre>
+<ul>
+<li>Do not use underscore prefix for internal methods of a React component.</li>
+</ul>
+<blockquote>
+<p>Why? Underscore prefixes are sometimes used as a convention in other languages to denote privacy. But, unlike those languages, there is no native support for privacy in JavaScript, everything is public. Regardless of your intentions, adding underscore prefixes to your properties does not actually make them private, and any property (underscore-prefixed or not) should be treated as being public. See issues #1024, and #490 for a more in-depth discussion.</p>
+</blockquote>
+<pre><code>```jsx
+// bad
+React.createClass({
+  _onClickSubmit() {
+    // do stuff
+  },
+
+  // other stuff
+});
+
+// good
+class extends React.Component {
+  onClickSubmit() {
+    // do stuff
+  }
+
+  // other stuff
+}
+```
+</code></pre>
+<ul>
+<li>
+<p>Be sure to return a value in your <code>render</code> methods. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-render-return.md"><code>react/require-render-return</code></a></p>
+<pre><code class="lang-jsx"><span class="pl-c">// bad</span>
+render() {
+  (<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> /&gt;</span>);
+}
+
+// good
+render() {
+  return (<span class="hljs-tag">&lt;<span class="hljs-name">div</span> /&gt;</span>);
+}
+</span></code></pre>
+</li>
+</ul>
+<h2 id="ordering">Ordering</h2>
+<ul>
+<li>Ordering for <code>class extends React.Component</code>:</li>
+</ul>
+<ol>
+<li>optional <code>static</code> methods</li>
+<li><code>constructor</code></li>
+<li><code>getChildContext</code></li>
+<li><code>componentWillMount</code></li>
+<li><code>componentDidMount</code></li>
+<li><code>componentWillReceiveProps</code></li>
+<li><code>shouldComponentUpdate</code></li>
+<li><code>componentWillUpdate</code></li>
+<li><code>componentDidUpdate</code></li>
+<li><code>componentWillUnmount</code></li>
+<li><em>clickHandlers or eventHandlers</em> like <code>onClickSubmit()</code> or <code>onChangeDescription()</code></li>
+<li><em>getter methods for <code>render</code></em> like <code>getSelectReason()</code> or <code>getFooterContent()</code></li>
+<li><em>Optional render methods</em> like <code>renderNavigation()</code> or <code>renderProfilePicture()</code></li>
+<li><code>render</code></li>
+</ol>
+<ul>
+<li>
+<p>How to define <code>propTypes</code>, <code>defaultProps</code>, <code>contextTypes</code>, etc...</p>
+<pre><code class="lang-jsx"><span class="pl-k">import</span> React, { PropTypes } <span class="pl-k">from</span> <span class="pl-s">&apos;react&apos;</span>;
+
+<span class="pl-k">const</span> propTypes = {
+  <span class="hljs-attr">id</span>: PropTypes.number.isRequired,
+  <span class="hljs-attr">url</span>: PropTypes.string.isRequired,
+  <span class="hljs-attr">text</span>: PropTypes.string,
+};
+
+<span class="pl-k">const</span> defaultProps = {
+  <span class="hljs-attr">text</span>: <span class="pl-s">&apos;Hello World&apos;</span>,
+};
+
+<span class="hljs-class"><span class="pl-k">class</span> <span class="pl-ent">Link</span> <span class="pl-k">extends</span> <span class="pl-ent">React</span>.<span class="pl-ent">Component</span> </span>{
+  <span class="pl-k">static</span> methodsAreOk() {
+    <span class="pl-k">return</span> <span class="pl-c1">true</span>;
+  }
+
+  render() {
+    <span class="pl-k">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="pl-s">{this.props.url}</span> <span class="hljs-attr">data-id</span>=<span class="pl-s">{this.props.id}</span>&gt;</span>{this.props.text}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span>
+  }
+}
+
+Link.propTypes = propTypes;
+Link.defaultProps = defaultProps;
+
+<span class="pl-k">export</span> <span class="pl-k">default</span> Link;
+</code></pre>
+</li>
+<li>
+<p>Ordering for <code>React.createClass</code>: eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md"><code>react/sort-comp</code></a></p>
+</li>
+</ul>
+<ol>
+<li><code>displayName</code></li>
+<li><code>propTypes</code></li>
+<li><code>contextTypes</code></li>
+<li><code>childContextTypes</code></li>
+<li><code>mixins</code></li>
+<li><code>statics</code></li>
+<li><code>defaultProps</code></li>
+<li><code>getDefaultProps</code></li>
+<li><code>getInitialState</code></li>
+<li><code>getChildContext</code></li>
+<li><code>componentWillMount</code></li>
+<li><code>componentDidMount</code></li>
+<li><code>componentWillReceiveProps</code></li>
+<li><code>shouldComponentUpdate</code></li>
+<li><code>componentWillUpdate</code></li>
+<li><code>componentDidUpdate</code></li>
+<li><code>componentWillUnmount</code></li>
+<li><em>clickHandlers or eventHandlers</em> like <code>onClickSubmit()</code> or <code>onChangeDescription()</code></li>
+<li><em>getter methods for <code>render</code></em> like <code>getSelectReason()</code> or <code>getFooterContent()</code></li>
+<li><em>Optional render methods</em> like <code>renderNavigation()</code> or <code>renderProfilePicture()</code></li>
+<li><code>render</code></li>
+</ol>
+<h2 id="ismounted"><code>isMounted</code></h2>
+<ul>
+<li>Do not use <code>isMounted</code>. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-is-mounted.md"><code>react/no-is-mounted</code></a></li>
+</ul>
+<blockquote>
+<p>Why? <a href="https://facebook.github.io/react/blog/2015/12/16/ismounted-antipattern.html"><code>isMounted</code> is an anti-pattern</a>, is not available when using ES6 classes, and is on its way to being officially deprecated.</p>
+</blockquote>
+<h2 id="translation">Translation</h2>
+<p>This JSX/React style guide is also available in other languages:</p>
+<ul>
+<li><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png" alt="cn"> <strong>Chinese (Simplified)</strong>: <a href="https://github.com/JasonBoy/javascript/tree/master/react">JasonBoy/javascript</a></li>
+<li><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Poland.png" alt="pl"> <strong>Polish</strong>: <a href="https://github.com/pietraszekl/javascript/tree/master/react">pietraszekl/javascript</a></li>
+<li><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/South-Korea.png" alt="kr"> <strong>Korean</strong>: <a href="https://github.com/apple77y/javascript/tree/master/react">apple77y/javascript</a></li>
+<li><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Brazil.png" alt="Br"> <strong>Portuguese</strong>: <a href="https://github.com/ronal2do/airbnb-react-styleguide">ronal2do/javascript</a></li>
+<li><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Japan.png" alt="jp"> <strong>Japanese</strong>: <a href="https://github.com/mitsuruog/javascript-style-guide/tree/master/react">mitsuruog/javascript-style-guide</a></li>
+</ul>
+<p><strong><a href="#table-of-contents">&#x2B06; back to top</a></strong></p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../styleguides/css.html"><span class="title">CSS</span></a></div>
+          <div class="right"><a href="../git/github-flow.html"><span class="label">Next: </span><span class="title">GitHub Flow</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

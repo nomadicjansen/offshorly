@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=d358ee59">
+    <link rel="stylesheet" href="../css/becash.css?t=b7edf798">
+    <script src="../assets/script.js?t=42463e55"></script>
+    <title>routing - BeCashReady Docs</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">BeCashReady Docs</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-general" href="../general/index.html">General</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-generalcommands" href="../general/commands.html">CLI Commands</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalfiles" href="../general/files.html">Tool Configuration</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalserver-configs" href="../general/server-configs.html">Server Configurations</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalfaq" href="../general/faq.html">FAQ</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalgotchas" href="../general/gotchas.html">Gotchas</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalremove" href="../general/remove.html">Remove</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Code Style Guides</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-styleguidesjs" href="../styleguides/js.html">JavaScript</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-styleguidescss" href="../styleguides/css.html">CSS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-styleguidesreact" href="../styleguides/react.html">React</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Contributing Code</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-gitgithub-flow" href="../git/github-flow.html">GitHub Flow</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-gitdeployment" href="../git/deployment.html">Deployment</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Submitting Bugs/Issues</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-issue_submissionissue_template" href="../issue_submission/issue_template.html">Issue Template</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-testing" href="../testing/index.html">Testing</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-testingunit-testing" href="../testing/unit-testing.html">Unit Testing</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-testingcomponent-testing" href="../testing/component-testing.html">Component Testing</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-testingremote-testing" href="../testing/remote-testing.html">Remote Testing</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-css" href="../css/index.html">CSS</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-csspostcss" href="../css/postcss.html">PostCSS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-csscss-modules" href="../css/css-modules.html">CSS Modules</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-csssanitize" href="../css/sanitize.html">sanitize.css</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-cssstylelint" href="../css/stylelint.html">stylelint.css</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-csssass" href="../css/sass.html">Using Sass</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-js" href="../js/index.html">JS</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-jsredux" href="../js/redux.html">Redux</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsimmutablejs" href="../js/immutablejs.html">ImmutableJS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsreselect" href="../js/reselect.html">reselect</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsredux-saga" href="../js/redux-saga.html">redux-saga</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsi18n" href="../js/i18n.html">i18n</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title -active link-jsrouting" href="../js/routing.html">routing</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a class="hlink link-usage" href="#usage">Usage</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-child-routes" href="#child-routes">Child Routes</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-dynamic-routes" href="#dynamic-routes">Dynamic routes</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-jsrouting">
+        <div class="header-nav">
+          <div class="right">
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="routing-via-react-router-and-react-router-redux">Routing via <code>react-router</code> and <code>react-router-redux</code></h1>
+<p><code>react-router</code> is the de-facto standard routing solution for react applications.
+The thing is that with redux and a single state tree, the URL is part of that
+state. <code>react-router-redux</code> takes care of synchronizing the location of our
+application with the application state.</p>
+<p>(See the <a href="https://github.com/reactjs/react-router-redux"><code>react-router-redux</code> documentation</a>
+for more information)</p>
+<h2 id="usage">Usage</h2>
+<p>To add a new route, use the generator with <code>npm run generate route</code>.</p>
+<p>This is what a standard (generated) route looks like for a container:</p>
+<pre><code class="lang-JS">{
+  <span class="hljs-attr">path</span>: <span class="pl-s">&apos;/&apos;</span>,
+  <span class="hljs-attr">name</span>: <span class="pl-s">&apos;home&apos;</span>,
+  getComponent(nextState, cb) {
+    <span class="pl-k">const</span> importModules = <span class="pl-c1">Promise</span>.all([
+      System.import(<span class="pl-s">&apos;containers/HomePage&apos;</span>)
+    ]);
+
+    <span class="pl-k">const</span> renderRoute = loadModule(cb);
+
+    importModules.then(<span class="hljs-function">(<span class="hljs-params">[component]</span>) =&gt;</span> {
+      renderRoute(component);
+    });
+
+    importModules.catch(errorLoading);
+  },
+}
+</code></pre>
+<p>To go to a new page use the <code>push</code> function by <code>react-router-redux</code>:</p>
+<pre><code class="lang-JS"><span class="pl-k">import</span> { push } <span class="pl-k">from</span> <span class="pl-s">&apos;react-router-redux&apos;</span>;
+
+dispatch(push(<span class="pl-s">&apos;/some/page&apos;</span>));
+</code></pre>
+<h2 id="child-routes">Child Routes</h2>
+<p><code>npm run generate route</code> does not currently support automatically generating child routes if you need them, but they can be easily created manually.</p>
+<p>For example, if you have a route called <code>about</code> at <code>/about</code> and want to make a child route called <code>team</code> at <code>/about/our-team</code> you can just add that child page to the parent page&apos;s <code>childRoutes</code> array like so:</p>
+<pre><code class="lang-JS"><span class="pl-c">/* your app&apos;s other routes would already be in this array */</span>
+{
+  <span class="hljs-attr">path</span>: <span class="pl-s">&apos;/about&apos;</span>,
+  <span class="hljs-attr">name</span>: <span class="pl-s">&apos;about&apos;</span>,
+  getComponent(nextState, cb) {
+    <span class="pl-k">const</span> importModules = <span class="pl-c1">Promise</span>.all([
+      System.import(<span class="pl-s">&apos;containers/AboutPage&apos;</span>),
+    ]);
+
+    <span class="pl-k">const</span> renderRoute = loadModule(cb);
+
+    importModules.then(<span class="hljs-function">(<span class="hljs-params">[component]</span>) =&gt;</span> {
+      renderRoute(component);
+    });
+
+    importModules.catch(errorLoading);
+  },
+  <span class="hljs-attr">childRoutes</span>: [
+    {
+      <span class="hljs-attr">path</span>: <span class="pl-s">&apos;/about/our-team&apos;</span>,
+      <span class="hljs-attr">name</span>: <span class="pl-s">&apos;team&apos;</span>,
+      getComponent(nextState, cb) {
+        <span class="pl-k">const</span> importModules = <span class="pl-c1">Promise</span>.all([
+          System.import(<span class="pl-s">&apos;containers/TeamPage&apos;</span>),
+        ]);
+
+        <span class="pl-k">const</span> renderRoute = loadModule(cb);
+
+        importModules.then(<span class="hljs-function">(<span class="hljs-params">[component]</span>) =&gt;</span> {
+          renderRoute(component);
+        });
+
+        importModules.catch(errorLoading);
+      },
+    },
+  ]
+}
+</code></pre>
+<h2 id="dynamic-routes">Dynamic routes</h2>
+<p>To go to a dynamic route such as &apos;post/:slug&apos; eg &apos;post/cool-new-post&apos;, firstly add the route to your <code>routes.js</code>, as per documentation:</p>
+<pre><code class="lang-JS">path: <span class="pl-s">&apos;/posts/:slug&apos;</span>,
+<span class="hljs-attr">name</span>: <span class="pl-s">&apos;post&apos;</span>,
+getComponent(nextState, cb) {
+ <span class="pl-k">const</span> importModules = <span class="pl-c1">Promise</span>.all([
+   System.import(<span class="pl-s">&apos;containers/Post/reducer&apos;</span>),
+   System.import(<span class="pl-s">&apos;containers/Post/sagas&apos;</span>),
+   System.import(<span class="pl-s">&apos;containers/Post&apos;</span>),
+ ]);
+
+ <span class="pl-k">const</span> renderRoute = loadModule(cb);
+
+ importModules.then(<span class="hljs-function">(<span class="hljs-params">[reducer, sagas, component]</span>) =&gt;</span> {
+   injectReducer(<span class="pl-s">&apos;post&apos;</span>, reducer.default);
+   injectSagas(sagas.default);
+   renderRoute(component);
+ });
+
+ importModules.catch(errorLoading);
+},
+</code></pre>
+<p>###Container:</p>
+<pre><code class="lang-JSX">&lt;Link to={<span class="pl-s">`/posts/<span class="hljs-subst">${post.slug}</span>`</span>} key={post._id}&gt;
+</code></pre>
+<p>Clickable link with payload (you could use push if needed).</p>
+<p>###Action:</p>
+<pre><code class="lang-JS"><span class="pl-k">export</span> <span class="hljs-function"><span class="pl-k">function</span> <span class="pl-ent">getPost</span>(<span class="hljs-params">slug</span>) </span>{
+  <span class="pl-k">return</span> {
+    <span class="hljs-attr">type</span>: LOAD_POST,
+    slug,
+  };
+}
+
+<span class="pl-k">export</span> <span class="hljs-function"><span class="pl-k">function</span> <span class="pl-ent">postLoaded</span>(<span class="hljs-params">post</span>) </span>{
+  <span class="pl-k">return</span> {
+    <span class="hljs-attr">type</span>: LOAD_POST_SUCCESS,
+    podcast,
+  };
+}
+</code></pre>
+<p>###Saga:</p>
+<pre><code class="lang-JS"><span class="pl-k">const</span> { slug } = <span class="pl-k">yield</span> take(LOAD_POST);
+<span class="pl-k">yield</span> call(getXhrPodcast, slug);
+
+<span class="pl-k">export</span> <span class="hljs-function"><span class="pl-k">function</span>* <span class="pl-ent">getXhrPodcast</span>(<span class="hljs-params">slug</span>) </span>{
+  <span class="pl-k">const</span> requestURL = <span class="pl-s">`http://your.api.com/api/posts/<span class="hljs-subst">${slug}</span>`</span>;
+  <span class="pl-k">const</span> post = <span class="pl-k">yield</span> call(request, requestURL);
+  <span class="pl-k">if</span> (!post.err) {
+    <span class="pl-k">yield</span> put(postLoaded(post));
+  } <span class="pl-k">else</span> {
+    <span class="pl-k">yield</span> put(postLoadingError(post.err));
+  }
+}
+</code></pre>
+<p>Wait (<code>take</code>) for the LOAD_POST constant, which contains the slug payload from the <code>getPost()</code> function in actions.js.</p>
+<p>When the action is fired then dispatch the <code>getXhrPodcast()</code> function to get the response from your api. On success dispatch the <code>postLoaded()</code> action (<code>yield put</code>) which sends back the response and can be added into the reducer state.</p>
+<p>You can read more on <a href="https://github.com/reactjs/react-router/blob/master/docs/API.md#props-3"><code>react-router</code>&apos;s documentation</a>.</p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../js/i18n.html"><span class="title">i18n</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

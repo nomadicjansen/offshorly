@@ -1,0 +1,2 @@
+Put this in its folder and change its file name to replace "page_head.html.twig" file if you accidentally updated Gantry Plugin.
+This is a modification for SEO Plugin.

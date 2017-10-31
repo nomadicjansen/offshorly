@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=615badd5">
+    <script src="../assets/script.js?t=42463e55"></script>
+    <title>Unit Testing - 7 Eleven CliQQ Docs</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">7 Eleven CliQQ Docs</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-general" href="../general/index.html">General</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-generalintroduction" href="../general/introduction.html">Introduction</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generaldeployment" href="../general/deployment.html">Deployment</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalpwa" href="../general/pwa.html">PWA</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalnode" href="../general/node.html">NodeJs</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalcommands" href="../general/commands.html">CLI Commands</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalfiles" href="../general/files.html">Tool Configuration</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalserver-configs" href="../general/server-configs.html">Server Configurations</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalfaq" href="../general/faq.html">FAQ</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalgotchas" href="../general/gotchas.html">Gotchas</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalremove" href="../general/remove.html">Remove</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Code Style Guides</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-styleguidesjs" href="../styleguides/js.html">JavaScript</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-styleguidescss" href="../styleguides/css.html">CSS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-styleguidesreact" href="../styleguides/react.html">React</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Contributing Code</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-gitgithub-flow" href="../git/github-flow.html">GitHub Flow</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-gitdeployment" href="../git/deployment.html">Deployment</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-testing" href="../testing/index.html">Testing</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title -active link-testingunit-testing" href="../testing/unit-testing.html">Unit Testing</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a class="hlink link-basics" href="#basics">Basics</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-jest" href="#jest">Jest</a>
+                      <ul class="heading-list -depth-2">
+                        <li class="heading-item -depth-3"><a class="hlink link-expect" href="#expect">expect</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-testing-redux-applications" href="#testing-redux-applications">Testing Redux Applications</a>
+                      <ul class="heading-list -depth-2">
+                        <li class="heading-item -depth-3"><a class="hlink link-reducers" href="#reducers">Reducers</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-actions" href="#actions">Actions</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-testingcomponent-testing" href="../testing/component-testing.html">Component Testing</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-testingremote-testing" href="../testing/remote-testing.html">Remote Testing</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-css" href="../css/index.html">CSS</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-cssstyled-components" href="../css/styled-components.html">Styled Component</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-semantic" href="../semantic/index.html">Semantic Theme</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-csssanitize" href="../css/sanitize.html">Sanitize.css</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-csssass" href="../css/sass.html">Using Sass</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-cssremove" href="../css/remove.html">Remove</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-js" href="../js/index.html">JS</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-jsredux" href="../js/redux.html">Redux</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsimmutablejs" href="../js/immutablejs.html">ImmutableJS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsreselect" href="../js/reselect.html">reselect</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsredux-saga" href="../js/redux-saga.html">redux-saga</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsi18n" href="../js/i18n.html">i18n</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsrouting" href="../js/routing.html">routing</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsremove" href="../js/remove.html">Remove</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-testingunit-testing">
+        <div class="header-nav">
+          <div class="right">
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="unit-testing">Unit testing</h1>
+<p>Unit testing is the practice of testing the smallest possible <em>units</em> of our
+code, functions. We run our tests and automatically verify that our functions
+do the thing we expect them to do. We assert that, given a set of inputs, our
+functions return the proper values and handle problems.</p>
+<p>This boilerplate uses the <a href="https://github.com/mochajs/mocha">Mocha</a> test
+framework to run the tests and <a href="http://github.com/mjackson/expect">expect</a> for
+assertions. These libraries make writing tests as easy as speaking - you
+<code>describe</code> a unit of your code and <code>expect</code> <code>it</code> to do the correct thing.</p>
+<!-- TOC depthFrom:2 depthTo:4 withLinks:1 updateOnSave:1 orderedList:0 -->
+<ul>
+<li><a href="#basics">Basics</a>
+<ul>
+<li><a href="#jest">Jest</a></li>
+<li><a href="#expect">expect</a></li>
+</ul>
+</li>
+<li><a href="#testing-redux-applications">Testing Redux Applications</a>
+<ul>
+<li><a href="#reducers">Reducers</a>
+<ul>
+<li><a href="#rewire">rewire</a></li>
+</ul>
+</li>
+<li><a href="#actions">Actions</a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<p>We use this glob pattern to find unit tests <code>app/**/*.test.js</code> - this tells
+mocha to run all files that end with <code>.test.js</code> anywhere within the <code>app</code>
+folder. Use this to your advantage, and put unit tests next to the files you
+want to test so relevant files stay together!</p>
+<p>Imagine a navigation bar, this is what its folder might look like:</p>
+<pre><code>NavBar                   # Wrapping folder
+&#x251C;&#x2500;&#x2500; NavBar.css           # Styles
+&#x251C;&#x2500;&#x2500; NavBar.react.js      # Actual component
+&#x251C;&#x2500;&#x2500; NavBar.actions.js    # Actions
+&#x251C;&#x2500;&#x2500; NavBar.constants.js  # Constants
+&#x251C;&#x2500;&#x2500; NavBar.reducer.js    # Reducer
+&#x2514;&#x2500;&#x2500; test                        # Folder of tests
+    &#x251C;&#x2500;&#x2500; NavBar.actions.test.js  # Actions tests
+    &#x2514;&#x2500;&#x2500; NavBar.reducer.test.js  # Reducer tests
+</code></pre>
+<h2 id="basics">Basics</h2>
+<p>For the sake of this guide, lets pretend we&apos;re testing this function. It&apos;s
+situated in the <code>add.js</code> file:</p>
+<pre><code class="lang-javascript"><span class="pl-c">// add.js</span>
+
+<span class="pl-k">export</span> <span class="hljs-function"><span class="pl-k">function</span> <span class="pl-ent">add</span>(<span class="hljs-params">x, y</span>) </span>{
+  <span class="pl-k">return</span> x + y;
+}
+</code></pre>
+<blockquote>
+<p>Note: The <code>export</code> here is ES6 syntax, and you will need an ES6 transpiler
+(e.g. babel.js) to run this JavaScript.</p>
+</blockquote>
+<blockquote>
+<p>The <code>export</code> exports our function as a module, which we can <code>import</code> and use
+in other files. Continue below to see what that looks like.</p>
+</blockquote>
+<h2 id="jest">Jest</h2>
+<p>Jest is our unit testing framework. Its API, which we write tests with, is speech like and easy to use.</p>
+<blockquote>
+<p>Note: This is the <a href="https://facebook.github.io/jest/">official documentation</a> of Mocha.</p>
+</blockquote>
+<p>We&apos;re going to add a second file called add.test.js with our unit tests inside.</p>
+<p>First, we <code>import</code> the function in our <code>add.test.js</code> file:</p>
+<pre><code class="lang-javascript"><span class="pl-c">// add.test.js</span>
+
+<span class="pl-k">import</span> { add } <span class="pl-k">from</span> <span class="pl-s">&apos;./add.js&apos;</span>;
+</code></pre>
+<p>Second, we <code>describe</code> our function:</p>
+<pre><code class="lang-javascript">describe(<span class="pl-s">&apos;add()&apos;</span>, () =&gt; {
+
+});
+</code></pre>
+<blockquote>
+<p>Note: <code>(arg1, arg2) =&gt; { }</code> is ES6 notation for anonymous functions, i.e. is
+the same thing as <code>function(arg1, arg2) { }</code></p>
+</blockquote>
+<p>Third, we tell Mocha what <code>it</code> (our function) should do:</p>
+<pre><code class="lang-javascript">describe(<span class="pl-s">&apos;add()&apos;</span>, () =&gt; {
+  it(<span class="pl-s">&apos;adds two numbers&apos;</span>, () =&gt; {
+
+  });
+
+  it(<span class="pl-s">&apos;doesnt add the third number&apos;</span>, () =&gt; {
+
+  });
+});
+</code></pre>
+<p>That&apos;s the entire Mocha part! Onwards to the actual tests.</p>
+<h3 id="expect">expect</h3>
+<p>Using expect, we <code>expect</code> our little function to return the same thing every
+time given the same input.</p>
+<blockquote>
+<p>Note: This is the <a href="https://github.com/mjackson/expect">official documentation</a> for expect.</p>
+</blockquote>
+<p>First, we have to import <code>expect</code> at the top of our file, before the tests:</p>
+<pre><code class="lang-javascript">;
+
+describe(<span class="pl-s">&apos;add()&apos;</span>, () =&gt; {
+  <span class="pl-c">// [...]</span>
+});
+</code></pre>
+<p>We&apos;re going to test that our little function correctly adds two numbers first.
+We are going to take some chosen inputs, and <code>expect</code> the result <code>toEqual</code> the
+corresponding output:</p>
+<pre><code class="lang-javascript"><span class="pl-c">// [...]</span>
+it(<span class="pl-s">&apos;adds two numbers&apos;</span>, () =&gt; {
+  expect(add(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>)).toEqual(<span class="hljs-number">5</span>);
+});
+<span class="pl-c">// [...]</span>
+</code></pre>
+<p>Lets add the second test, which determines that our function doesn&apos;t add the
+third number if one is present:</p>
+<pre><code class="lang-javascript"><span class="pl-c">// [...]</span>
+it(<span class="pl-s">&apos;doesnt add the third number&apos;</span>, () =&gt; {
+ expect(add(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>)).toEqual(add(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>));
+});
+<span class="pl-c">// [...]</span>
+</code></pre>
+<blockquote>
+<p>Note: Notice that we call <code>add</code> in <code>toEqual</code>. I won&apos;t tell you why, but just
+think about what would happen if we rewrote the expect as <code>expect(add(2, 3, 5)).toEqual(5)</code>
+and somebody broke something in the add function. What would this test
+actually... test?</p>
+</blockquote>
+<p>Should our function work, Mocha will show this output when running the tests:</p>
+<pre><code>add()
+  &#x2713; adds two numbers
+  &#x2713; doesnt add the third number
+</code></pre>
+<p>Lets say an unnamed colleague of ours breaks our function:</p>
+<pre><code class="lang-javascript"><span class="pl-c">// add.js</span>
+
+<span class="pl-k">export</span> <span class="hljs-function"><span class="pl-k">function</span> <span class="pl-ent">add</span>(<span class="hljs-params">x, y</span>) </span>{
+  <span class="pl-k">return</span> x * y;
+}
+</code></pre>
+<p>Oh no, now our function doesn&apos;t add the numbers anymore, it multiplies them!
+Imagine the consequences to our code that uses the function!</p>
+<p>Thankfully, we have unit tests in place. Because we run the unit tests before we
+deploy our application, we see this output:</p>
+<pre><code>add()
+  1) adds two numbers
+  &#x2713; doesnt add the third number
+
+  1) add adds two numbers:
+    Error: Expected 6 to equal 5
+</code></pre>
+<p>This tells us that something is broken in the add function before any users get
+the code! Congratulations, you just saved time and money!</p>
+<h2 id="testing-redux-applications">Testing Redux Applications</h2>
+<p>This boilerplate uses Redux, partially because it turns our data flow into
+testable (pure) functions. Let&apos;s go back to our <code>NavBar</code> component from above,
+and see what testing the actions and the reducer of it would look like.</p>
+<p>This is what our <code>NavBar</code> actions look like:</p>
+<pre><code class="lang-javascript"><span class="pl-c">// NavBar.actions.js</span>
+
+<span class="pl-k">import</span> { TOGGLE_NAV } <span class="pl-k">from</span> <span class="pl-s">&apos;./NavBar.constants.js&apos;</span>;
+
+<span class="pl-k">export</span> <span class="hljs-function"><span class="pl-k">function</span> <span class="pl-ent">toggleNav</span>(<span class="hljs-params"></span>) </span>{
+  <span class="pl-k">return</span> { <span class="hljs-attr">type</span>: TOGGLE_NAV };
+}
+</code></pre>
+<p>with this reducer:</p>
+<pre><code class="lang-javascript"><span class="pl-c">// NavBar.reducer.js</span>
+
+<span class="pl-k">import</span> { TOGGLE_NAV } <span class="pl-k">from</span> <span class="pl-s">&apos;./NavBar.constants.js&apos;</span>;
+
+<span class="pl-k">const</span> initialState = {
+  <span class="hljs-attr">open</span>: <span class="pl-c1">false</span>
+};
+
+<span class="hljs-function"><span class="pl-k">function</span> <span class="pl-ent">NavBarReducer</span>(<span class="hljs-params">state = initialState, action</span>) </span>{
+  <span class="pl-k">switch</span> (action.type) {
+    <span class="pl-k">case</span> TOGGLE_NAV:
+      <span class="pl-k">return</span> <span class="pl-c1">Object</span>.assign({}, state, {
+        <span class="hljs-attr">open</span>: !state.open
+      });
+    <span class="pl-k">default</span>:
+      <span class="pl-k">return</span> state;
+  }
+}
+
+<span class="pl-k">export</span> <span class="pl-k">default</span> NavBarReducer;
+</code></pre>
+<p>Lets test the reducer first!</p>
+<h3 id="reducers">Reducers</h3>
+<p>First, we have to import <code>expect</code>, the reducer and the constant.</p>
+<pre><code class="lang-javascript"><span class="pl-c">// NavBar.reducer.test.js</span>
+
+;
+<span class="pl-k">import</span> NavBarReducer <span class="pl-k">from</span> <span class="pl-s">&apos;../NavBar.reducer&apos;</span>;
+<span class="pl-k">import</span> { TOGGLE_NAV } <span class="pl-k">from</span> <span class="pl-s">&apos;../NavBar.constants&apos;</span>;
+</code></pre>
+<p>Then we <code>describe</code> the reducer, and add two tests: we check that it returns the
+initial state and that it handles the <code>toggleNav</code> action.</p>
+<pre><code class="lang-javascript">describe(<span class="pl-s">&apos;NavBarReducer&apos;</span>, () =&gt; {
+  it(<span class="pl-s">&apos;returns the initial state&apos;</span>, () =&gt; {
+
+  });
+
+  it(<span class="pl-s">&apos;handles the toggleNav action&apos;</span>, () =&gt; {
+
+  });
+});
+</code></pre>
+<p>Lets write the tests themselves! Since the reducer is just a function, we can
+call it like any other function and <code>expect</code> the output to equal something.</p>
+<p>To test that it returns the initial state, we call it with a state of <code>undefined</code>
+(the first argument), and an empty action (second argument). The reducer should
+return the initial state of the <code>NavBar</code>, which is</p>
+<pre><code class="lang-javascript">{
+  <span class="hljs-attr">open</span>: <span class="pl-c1">false</span>
+}
+</code></pre>
+<p>Lets put that into practice:</p>
+<pre><code class="lang-javascript">describe(<span class="pl-s">&apos;NavBarReducer&apos;</span>, () =&gt; {
+  it(<span class="pl-s">&apos;returns the initial state&apos;</span>, () =&gt; {
+    expect(NavBarReducer(<span class="pl-c1">undefined</span>, {})).toEqual({
+      <span class="hljs-attr">open</span>: <span class="pl-c1">false</span>
+    });
+  });
+
+  it(<span class="pl-s">&apos;handles the toggleNav action&apos;</span>, () =&gt; {
+
+  });
+});
+</code></pre>
+<p>This works, but we have one problem: We also test the initial state itself. When
+somebody changes the initial state, this test will fail, even though the reducer
+correctly returns the initial state.</p>
+<p>To fix that, we have to <code>import</code> the initial state from the reducer file and
+check that the reducer returns that. This has one problem: Our initial state
+isn&apos;t <code>export</code>ed.</p>
+<p>Now, you might be thinking &quot;Ha! easy: simply add an <code>export</code> before the
+<code>const initialState</code> in the reducer and boom!&quot;... But in fact we <em>don&apos;t</em> want
+to do that because it&apos;s an internal (or &quot;private&quot;) property of that module
+alone and shouldn&apos;t really be accessible from the outside at all.</p>
+<p>This is where the <code>rewire</code> module comes in handy.</p>
+<h4 id="rewire">rewire</h4>
+<p>Rewire allows us to access properties we normally couldn&apos;t via special
+<code>__get__</code> and <code>__set__</code> methods it injects into modules.</p>
+<p>Start by <code>import</code>ing rewire <strong>at the top</strong> of your test file:</p>
+<pre><code class="lang-javascript"><span class="pl-c">// `NavBar.reducer.test.js`</span>
+
+;
+<span class="pl-k">import</span> rewire <span class="pl-k">from</span> <span class="pl-s">&apos;rewire&apos;</span>;
+<span class="pl-k">import</span> NavBarReducer <span class="pl-k">from</span> <span class="pl-s">&apos;../NavBar.reducer&apos;</span>;
+<span class="pl-k">import</span> { TOGGLE_NAV } <span class="pl-k">from</span> <span class="pl-s">&apos;../NavBar.constants&apos;</span>;
+
+<span class="pl-k">const</span> initialState = NavBarReducer.__get__(<span class="pl-s">&apos;initialState&apos;</span>);
+</code></pre>
+<blockquote>
+<p>Note: You might be wondering why we still <code>import</code> the <code>NavBarReducer</code> above.
+The <code>NavBarReducer</code> imported with <code>rewire</code> isn&apos;t the <em>actual</em> reducer, it&apos;s a
+<code>rewire</code>d version.</p>
+</blockquote>
+<p>Now we can really see whether the <code>NavBarReducer</code> returns the initial state if
+no action is passed!</p>
+<pre><code class="lang-javascript">it(<span class="pl-s">&apos;returns the initial state&apos;</span>, () =&gt; {
+  expect(NavBarReducer(<span class="pl-c1">undefined</span>, {})).toEqual(initialState);
+});
+</code></pre>
+<p>w00t, we fixed the test!</p>
+<blockquote>
+<p>For more information on Rewire, see the <a href="https://github.com/jhnns/rewire">official documentation</a></p>
+</blockquote>
+<p>Lets see how we can test actions next.</p>
+<h3 id="actions">Actions</h3>
+<p>We have one action <code>toggleNav</code> that changes the <code>NavBar</code> open state.</p>
+<p>A Redux action is a pure function, so testing it isn&apos;t more difficult than
+testing our <code>add</code> function from the first part of this guide!</p>
+<p>The first step is to import the action to be tested, the constant it should
+return and <code>expect</code>:</p>
+<pre><code class="lang-javascript"><span class="pl-c">// NavBar.actions.test.js</span>
+
+<span class="pl-k">import</span> { toggleNav } <span class="pl-k">from</span> <span class="pl-s">&apos;../NavBar.actions&apos;</span>;
+<span class="pl-k">import</span> { TOGGLE_NAV } <span class="pl-k">from</span> <span class="pl-s">&apos;../NavBar.constants&apos;</span>;
+;
+</code></pre>
+<p>Then we <code>describe</code> the actions:</p>
+<pre><code class="lang-javascript">describe(<span class="pl-s">&apos;NavBar actions&apos;</span>, () =&gt; {
+  describe(<span class="pl-s">&apos;toggleNav&apos;</span>, () =&gt; {
+    it(<span class="pl-s">&apos;should return the correct constant&apos;</span>, () =&gt; {
+
+    });
+  });
+});
+</code></pre>
+<blockquote>
+<p>Note: <code>describe</code>s can be nested, which gives us nice output, as we&apos;ll see later.</p>
+</blockquote>
+<p>And the last step is to add the assertion:</p>
+<pre><code class="lang-javascript">it(<span class="pl-s">&apos;should return the correct constant&apos;</span>, () =&gt; {
+  expect(toggleNav()).toEqual({
+    <span class="hljs-attr">type</span>: TOGGLE_NAV
+  });
+});
+</code></pre>
+<p>If our <code>toggleNav</code> action works correctly, this is the output Mocha will show us:</p>
+<pre><code>NavBar actions
+  toggleNav
+    &#x2713; should return the correct constant
+</code></pre>
+<p>And that&apos;s it, we now know when somebody breaks the <code>toggleNav</code> action!</p>
+<p><em>Continue to learn how to test your application with <a href="component-testing.html">Component Testing</a>!</em></p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../testing/index.html"><span class="title">Testing</span></a></div>
+          <div class="right"><a href="../testing/component-testing.html"><span class="label">Next: </span><span class="title">Component Testing</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

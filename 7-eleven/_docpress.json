@@ -1,0 +1,2387 @@
+{
+  "toc": {
+    "sections": [
+      {
+        "title": "7 Eleven CliQQ Docs",
+        "source": "README.md",
+        "url": "index.html",
+        "slug": "index",
+        "headings": [
+          {
+            "title": "Development Environment Setup",
+            "depth": 2,
+            "id": "development-environment-setup"
+          },
+          {
+            "title": "Quick start",
+            "depth": 2,
+            "id": "quick-start"
+          },
+          {
+            "title": "Documentation",
+            "depth": 2,
+            "id": "documentation"
+          },
+          {
+            "title": "Overview",
+            "depth": 2,
+            "id": "overview",
+            "headings": [
+              {
+                "title": "Application Folder Structure",
+                "depth": 3,
+                "id": "application-folder-structure"
+              },
+              {
+                "title": "Architecture Diagram",
+                "depth": 3,
+                "id": "architecture-diagram"
+              },
+              {
+                "title": "Building & Deploying",
+                "depth": 3,
+                "id": "building-and-deploying"
+              },
+              {
+                "title": "CSS",
+                "depth": 3,
+                "id": "css"
+              },
+              {
+                "title": "JS",
+                "depth": 3,
+                "id": "js"
+              },
+              {
+                "title": "SEO",
+                "depth": 3,
+                "id": "seo"
+              },
+              {
+                "title": "Testing",
+                "depth": 3,
+                "id": "testing"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "General",
+        "source": "docs/general/README.md",
+        "url": "general/index.html",
+        "slug": "general",
+        "headings": [
+          {
+            "title": "Quick scaffolding",
+            "depth": 2,
+            "id": "quick-scaffolding"
+          },
+          {
+            "title": "Instant feedback",
+            "depth": 2,
+            "id": "instant-feedback"
+          },
+          {
+            "title": "Predictable state management",
+            "depth": 2,
+            "id": "predictable-state-management"
+          },
+          {
+            "title": "Next generation JavaScript",
+            "depth": 2,
+            "id": "next-generation-javascript"
+          },
+          {
+            "title": "Next generation CSS",
+            "depth": 2,
+            "id": "next-generation-css"
+          },
+          {
+            "title": "Industry-standard routing",
+            "depth": 2,
+            "id": "industry-standard-routing"
+          },
+          {
+            "title": "Add To Homescreen",
+            "depth": 2,
+            "id": "add-to-homescreen"
+          },
+          {
+            "title": "Performant Web Font Loading",
+            "depth": 2,
+            "id": "performant-web-font-loading",
+            "headings": [
+              {
+                "title": "Adding a new font",
+                "depth": 3,
+                "id": "adding-a-new-font"
+              }
+            ]
+          },
+          {
+            "title": "Image optimization",
+            "depth": 2,
+            "id": "image-optimization"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Introduction",
+            "source": "docs/general/introduction.md",
+            "url": "general/introduction.html",
+            "slug": "generalintroduction",
+            "headings": [
+              {
+                "title": "Tech Stack",
+                "depth": 2,
+                "id": "tech-stack",
+                "headings": [
+                  {
+                    "title": "Core",
+                    "depth": 3,
+                    "id": "core"
+                  },
+                  {
+                    "title": "Unit Testing",
+                    "depth": 3,
+                    "id": "unit-testing"
+                  },
+                  {
+                    "title": "Linting",
+                    "depth": 3,
+                    "id": "linting"
+                  }
+                ]
+              },
+              {
+                "title": "Project Structure",
+                "depth": 2,
+                "id": "project-structure",
+                "headings": [
+                  {
+                    "title": "`app/`",
+                    "depth": 3,
+                    "id": "app"
+                  },
+                  {
+                    "title": "`internals/`",
+                    "depth": 3,
+                    "id": "internals"
+                  },
+                  {
+                    "title": "`server`",
+                    "depth": 3,
+                    "id": "server"
+                  }
+                ]
+              },
+              {
+                "title": "Basic Building Blocks",
+                "depth": 2,
+                "id": "basic-building-blocks",
+                "headings": [
+                  {
+                    "title": "How does the application boot up?",
+                    "depth": 3,
+                    "id": "how-does-the-application-boot-up"
+                  },
+                  {
+                    "title": "`app/app.js`:",
+                    "depth": 3,
+                    "id": "appapp.js:"
+                  },
+                  {
+                    "title": "React Router:",
+                    "depth": 3,
+                    "id": "react-router:"
+                  },
+                  {
+                    "title": "Redux:",
+                    "depth": 3,
+                    "id": "redux:"
+                  },
+                  {
+                    "title": "Reselect:",
+                    "depth": 3,
+                    "id": "reselect:"
+                  },
+                  {
+                    "title": "Redux Saga:",
+                    "depth": 3,
+                    "id": "redux-saga:"
+                  }
+                ]
+              },
+              {
+                "title": "Example App: Behind the scenes",
+                "depth": 2,
+                "id": "example-app:-behind-the-scenes"
+              }
+            ]
+          },
+          {
+            "title": "Deployment",
+            "source": "docs/general/deployment.md",
+            "url": "general/deployment.html",
+            "slug": "generaldeployment",
+            "headings": [
+              {
+                "title": "Heroku",
+                "depth": 2,
+                "id": "heroku",
+                "headings": [
+                  {
+                    "title": "Easy 5-Step Deployment Process",
+                    "depth": 3,
+                    "id": "easy-5-step-deployment-process"
+                  }
+                ]
+              },
+              {
+                "title": "AWS S3",
+                "depth": 2,
+                "id": "aws-s3",
+                "headings": [
+                  {
+                    "title": "Easy 7-Step Deployment Process",
+                    "depth": 3,
+                    "id": "easy-7-step-deployment-process"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "PWA",
+            "source": "docs/general/pwa.md",
+            "url": "general/pwa.html",
+            "slug": "generalpwa",
+            "headings": [
+              {
+                "title": "What is a Progressive Web App?",
+                "depth": 3,
+                "id": "what-is-a-progressive-web-app"
+              },
+              {
+                "title": "Service Workers",
+                "depth": 3,
+                "id": "service-workers"
+              },
+              {
+                "title": "Offline-first",
+                "depth": 3,
+                "id": "offline-first"
+              }
+            ]
+          },
+          {
+            "title": "NodeJs",
+            "source": "docs/general/node.md",
+            "url": "general/node.html",
+            "slug": "generalnode",
+            "headings": [
+              {
+                "title": "Specify `engines` key in `package.json`",
+                "depth": 2,
+                "id": "specify-engines-key-in-package.json"
+              },
+              {
+                "title": "Use a smart `.npmrc`",
+                "depth": 2,
+                "id": "use-a-smart-.npmrc"
+              },
+              {
+                "title": "Hop on the ES6 train",
+                "depth": 2,
+                "id": "hop-on-the-es6-train"
+              },
+              {
+                "title": "Stick with lower case",
+                "depth": 2,
+                "id": "stick-with-lower-case"
+              },
+              {
+                "title": "Cluster your app",
+                "depth": 2,
+                "id": "cluster-your-app"
+              },
+              {
+                "title": "Be environmentally aware",
+                "depth": 2,
+                "id": "be-environmentally-aware"
+              },
+              {
+                "title": "Reference:",
+                "depth": 2,
+                "id": "reference:"
+              }
+            ]
+          },
+          {
+            "title": "CLI Commands",
+            "source": "docs/general/commands.md",
+            "url": "general/commands.html",
+            "slug": "generalcommands",
+            "headings": [
+              {
+                "title": "Development Mode",
+                "depth": 2,
+                "id": "development-mode"
+              },
+              {
+                "title": "Cleaning",
+                "depth": 2,
+                "id": "cleaning"
+              },
+              {
+                "title": "Generators",
+                "depth": 2,
+                "id": "generators"
+              },
+              {
+                "title": "Server",
+                "depth": 2,
+                "id": "server",
+                "headings": [
+                  {
+                    "title": "Development",
+                    "depth": 3,
+                    "id": "development"
+                  },
+                  {
+                    "title": "Production",
+                    "depth": 3,
+                    "id": "production"
+                  },
+                  {
+                    "title": "Port",
+                    "depth": 3,
+                    "id": "port"
+                  }
+                ]
+              },
+              {
+                "title": "Building",
+                "depth": 2,
+                "id": "building"
+              },
+              {
+                "title": "Testing",
+                "depth": 2,
+                "id": "testing"
+              },
+              {
+                "title": "Unit testing",
+                "depth": 2,
+                "id": "unit-testing",
+                "headings": [
+                  {
+                    "title": "Browsers",
+                    "depth": 3,
+                    "id": "browsers"
+                  },
+                  {
+                    "title": "Watching",
+                    "depth": 3,
+                    "id": "watching"
+                  },
+                  {
+                    "title": "Remote testing",
+                    "depth": 3,
+                    "id": "remote-testing"
+                  },
+                  {
+                    "title": "Performance testing",
+                    "depth": 3,
+                    "id": "performance-testing"
+                  },
+                  {
+                    "title": "Dependency size test",
+                    "depth": 3,
+                    "id": "dependency-size-test"
+                  }
+                ]
+              },
+              {
+                "title": "Linting",
+                "depth": 2,
+                "id": "linting",
+                "headings": [
+                  {
+                    "title": "JavaScript",
+                    "depth": 3,
+                    "id": "javascript"
+                  },
+                  {
+                    "title": "CSS",
+                    "depth": 3,
+                    "id": "css"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Tool Configuration",
+            "source": "docs/general/files.md",
+            "url": "general/files.html",
+            "slug": "generalfiles",
+            "headings": [
+              {
+                "title": "The root folder",
+                "depth": 2,
+                "id": "the-root-folder"
+              },
+              {
+                "title": "The `./internals` folder",
+                "depth": 2,
+                "id": "the-.internals-folder"
+              }
+            ]
+          },
+          {
+            "title": "Server Configurations",
+            "source": "docs/general/server-configs.md",
+            "url": "general/server-configs.html",
+            "slug": "generalserver-configs",
+            "headings": [
+              {
+                "title": "Apache",
+                "depth": 2,
+                "id": "apache"
+              },
+              {
+                "title": "Nginx",
+                "depth": 2,
+                "id": "nginx"
+              }
+            ]
+          },
+          {
+            "title": "FAQ",
+            "source": "docs/general/faq.md",
+            "url": "general/faq.html",
+            "slug": "generalfaq",
+            "headings": [
+              {
+                "title": "Where are Babel, ESLint and stylelint configured?",
+                "depth": 2,
+                "id": "where-are-babel-eslint-and-stylelint-configured"
+              },
+              {
+                "title": "Where are the files coming from when I run `npm start`?",
+                "depth": 2,
+                "id": "where-are-the-files-coming-from-when-i-run-npm-start"
+              },
+              {
+                "title": "How do I fix `Error: listen EADDRINUSE 127.0.0.1:3000`?",
+                "depth": 2,
+                "id": "how-do-i-fix-error:-listen-eaddrinuse-127.0.0.1:3000",
+                "headings": [
+                  {
+                    "title": "OS X / Linux:",
+                    "depth": 3,
+                    "id": "os-x-linux:"
+                  },
+                  {
+                    "title": "Windows",
+                    "depth": 3,
+                    "id": "windows"
+                  }
+                ]
+              },
+              {
+                "title": "Local webfonts not working for development",
+                "depth": 2,
+                "id": "local-webfonts-not-working-for-development"
+              },
+              {
+                "title": "Non-route containers",
+                "depth": 2,
+                "id": "non-route-containers",
+                "headings": [
+                  {
+                    "title": "Where do I put the reducer?",
+                    "depth": 3,
+                    "id": "where-do-i-put-the-reducer"
+                  },
+                  {
+                    "title": "How do I run the saga?",
+                    "depth": 3,
+                    "id": "how-do-i-run-the-saga"
+                  }
+                ]
+              },
+              {
+                "title": "Using this boilerplate with WebStorm",
+                "depth": 2,
+                "id": "using-this-boilerplate-with-webstorm",
+                "headings": [
+                  {
+                    "title": "Troubleshooting",
+                    "depth": 3,
+                    "id": "troubleshooting"
+                  },
+                  {
+                    "title": "Enable ESLint",
+                    "depth": 3,
+                    "id": "enable-eslint"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Gotchas",
+            "source": "docs/general/gotchas.md",
+            "url": "general/gotchas.html",
+            "slug": "generalgotchas",
+            "headings": [
+              {
+                "title": "Special images in HTML files",
+                "depth": 2,
+                "id": "special-images-in-html-files"
+              },
+              {
+                "title": "Load reducers optimistically",
+                "depth": 2,
+                "id": "load-reducers-optimistically"
+              },
+              {
+                "title": "Exclude modules from Babel processing",
+                "depth": 2,
+                "id": "exclude-modules-from-babel-processing"
+              },
+              {
+                "title": "Running tests in `watch` mode",
+                "depth": 2,
+                "id": "running-tests-in-watch-mode"
+              },
+              {
+                "title": "When in doubt, re-install!",
+                "depth": 2,
+                "id": "when-in-doubt-re-install!"
+              }
+            ]
+          },
+          {
+            "title": "Remove",
+            "source": "docs/general/remove.md",
+            "url": "general/remove.html",
+            "slug": "generalremove",
+            "headings": [
+              {
+                "title": "Removing offline access",
+                "depth": 3,
+                "id": "removing-offline-access"
+              },
+              {
+                "title": "Removing add to homescreen functionality",
+                "depth": 3,
+                "id": "removing-add-to-homescreen-functionality"
+              },
+              {
+                "title": "Removing performant web font loading",
+                "depth": 3,
+                "id": "removing-performant-web-font-loading"
+              },
+              {
+                "title": "Removing image optimization",
+                "depth": 3,
+                "id": "removing-image-optimization"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Code Style Guides",
+        "sections": [
+          {
+            "title": "JavaScript",
+            "source": "docs/styleguides/js.md",
+            "url": "styleguides/js.html",
+            "slug": "styleguidesjs",
+            "headings": [
+              {
+                "title": "JavaScript Standard Style",
+                "depth": 2,
+                "id": "javascript-standard-style",
+                "headings": [
+                  {
+                    "title": "The Rules",
+                    "depth": 3,
+                    "id": "the-rules"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "CSS",
+            "source": "docs/styleguides/css.md",
+            "url": "styleguides/css.html",
+            "slug": "styleguidescss",
+            "headings": [
+              {
+                "title": "Table of Contents",
+                "depth": 2,
+                "id": "table-of-contents"
+              },
+              {
+                "title": "Terminology",
+                "depth": 2,
+                "id": "terminology",
+                "headings": [
+                  {
+                    "title": "Rule declaration",
+                    "depth": 3,
+                    "id": "rule-declaration"
+                  },
+                  {
+                    "title": "Selectors",
+                    "depth": 3,
+                    "id": "selectors"
+                  },
+                  {
+                    "title": "Properties",
+                    "depth": 3,
+                    "id": "properties"
+                  }
+                ]
+              },
+              {
+                "title": "CSS",
+                "depth": 2,
+                "id": "css",
+                "headings": [
+                  {
+                    "title": "Formatting",
+                    "depth": 3,
+                    "id": "formatting"
+                  },
+                  {
+                    "title": "Comments",
+                    "depth": 3,
+                    "id": "comments"
+                  },
+                  {
+                    "title": "ID selectors",
+                    "depth": 3,
+                    "id": "id-selectors"
+                  },
+                  {
+                    "title": "JavaScript hooks",
+                    "depth": 3,
+                    "id": "javascript-hooks"
+                  },
+                  {
+                    "title": "Border",
+                    "depth": 3,
+                    "id": "border"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "React",
+            "source": "docs/styleguides/react.md",
+            "url": "styleguides/react.html",
+            "slug": "styleguidesreact",
+            "headings": [
+              {
+                "title": "Table of Contents",
+                "depth": 2,
+                "id": "table-of-contents"
+              },
+              {
+                "title": "Basic Rules",
+                "depth": 2,
+                "id": "basic-rules"
+              },
+              {
+                "title": "Class vs `React.createClass` vs stateless",
+                "depth": 2,
+                "id": "class-vs-react.createclass-vs-stateless"
+              },
+              {
+                "title": "Naming",
+                "depth": 2,
+                "id": "naming"
+              },
+              {
+                "title": "Declaration",
+                "depth": 2,
+                "id": "declaration"
+              },
+              {
+                "title": "Alignment",
+                "depth": 2,
+                "id": "alignment"
+              },
+              {
+                "title": "Quotes",
+                "depth": 2,
+                "id": "quotes"
+              },
+              {
+                "title": "Spacing",
+                "depth": 2,
+                "id": "spacing"
+              },
+              {
+                "title": "Props",
+                "depth": 2,
+                "id": "props"
+              },
+              {
+                "title": "Refs",
+                "depth": 2,
+                "id": "refs"
+              },
+              {
+                "title": "Parentheses",
+                "depth": 2,
+                "id": "parentheses"
+              },
+              {
+                "title": "Tags",
+                "depth": 2,
+                "id": "tags"
+              },
+              {
+                "title": "Methods",
+                "depth": 2,
+                "id": "methods"
+              },
+              {
+                "title": "Ordering",
+                "depth": 2,
+                "id": "ordering"
+              },
+              {
+                "title": "`isMounted`",
+                "depth": 2,
+                "id": "ismounted"
+              },
+              {
+                "title": "Translation",
+                "depth": 2,
+                "id": "translation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Contributing Code",
+        "sections": [
+          {
+            "title": "GitHub Flow",
+            "source": "docs/git/github-flow.md",
+            "url": "git/github-flow.html",
+            "slug": "gitgithub-flow",
+            "headings": [
+              {
+                "title": "The gist",
+                "depth": 3,
+                "id": "the-gist"
+              },
+              {
+                "title": "The workflow",
+                "depth": 3,
+                "id": "the-workflow"
+              },
+              {
+                "title": "useful config",
+                "depth": 3,
+                "id": "useful-config"
+              },
+              {
+                "title": "Naming Branches",
+                "depth": 2,
+                "id": "naming-branches"
+              }
+            ]
+          },
+          {
+            "title": "Deployment",
+            "source": "docs/git/deployment.md",
+            "url": "git/deployment.html",
+            "slug": "gitdeployment",
+            "headings": [
+              {
+                "title": "Code Review",
+                "depth": 2,
+                "id": "code-review"
+              },
+              {
+                "title": "Branch deploys",
+                "depth": 2,
+                "id": "branch-deploys"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Testing",
+        "source": "docs/testing/README.md",
+        "url": "testing/index.html",
+        "slug": "testing",
+        "headings": [
+          {
+            "title": "Usage",
+            "depth": 2,
+            "id": "usage"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Unit Testing",
+            "source": "docs/testing/unit-testing.md",
+            "url": "testing/unit-testing.html",
+            "slug": "testingunit-testing",
+            "headings": [
+              {
+                "title": "Basics",
+                "depth": 2,
+                "id": "basics"
+              },
+              {
+                "title": "Jest",
+                "depth": 2,
+                "id": "jest",
+                "headings": [
+                  {
+                    "title": "expect",
+                    "depth": 3,
+                    "id": "expect"
+                  }
+                ]
+              },
+              {
+                "title": "Testing Redux Applications",
+                "depth": 2,
+                "id": "testing-redux-applications",
+                "headings": [
+                  {
+                    "title": "Reducers",
+                    "depth": 3,
+                    "id": "reducers"
+                  },
+                  {
+                    "title": "Actions",
+                    "depth": 3,
+                    "id": "actions"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Component Testing",
+            "source": "docs/testing/component-testing.md",
+            "url": "testing/component-testing.html",
+            "slug": "testingcomponent-testing",
+            "headings": [
+              {
+                "title": "Shallow rendering",
+                "depth": 2,
+                "id": "shallow-rendering"
+              },
+              {
+                "title": "Enzyme",
+                "depth": 2,
+                "id": "enzyme"
+              }
+            ]
+          },
+          {
+            "title": "Remote Testing",
+            "source": "docs/testing/remote-testing.md",
+            "url": "testing/remote-testing.html",
+            "slug": "testingremote-testing"
+          }
+        ]
+      },
+      {
+        "title": "CSS",
+        "source": "docs/css/README.md",
+        "url": "css/index.html",
+        "slug": "css",
+        "sections": [
+          {
+            "title": "Styled Component",
+            "source": "docs/css/styled-components.md",
+            "url": "css/styled-components.html",
+            "slug": "cssstyled-components",
+            "headings": [
+              {
+                "title": "Usage",
+                "depth": 2,
+                "id": "usage"
+              }
+            ]
+          },
+          {
+            "title": "Semantic Theme",
+            "source": "docs/semantic/README.md",
+            "url": "semantic/index.html",
+            "slug": "semantic",
+            "headings": [
+              {
+                "title": "Quick Start",
+                "depth": 2,
+                "id": "quick-start"
+              },
+              {
+                "title": "Theming",
+                "depth": 2,
+                "id": "theming"
+              },
+              {
+                "title": "Using themes",
+                "depth": 2,
+                "id": "using-themes",
+                "headings": [
+                  {
+                    "title": "Sitewide Defaults",
+                    "depth": 3,
+                    "id": "sitewide-defaults"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Sanitize.css",
+            "source": "docs/css/sanitize.md",
+            "url": "css/sanitize.html",
+            "slug": "csssanitize"
+          },
+          {
+            "title": "Using Sass",
+            "source": "docs/css/sass.md",
+            "url": "css/sass.html",
+            "slug": "csssass"
+          },
+          {
+            "title": "Remove",
+            "source": "docs/css/remove.md",
+            "url": "css/remove.html",
+            "slug": "cssremove",
+            "headings": [
+              {
+                "title": "Removing `sanitize.css`",
+                "depth": 2,
+                "id": "removing-sanitize.css"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "JS",
+        "source": "docs/js/README.md",
+        "url": "js/index.html",
+        "slug": "js",
+        "headings": [
+          {
+            "title": "State management",
+            "depth": 2,
+            "id": "state-management",
+            "headings": [
+              {
+                "title": "Learn more",
+                "depth": 3,
+                "id": "learn-more"
+              }
+            ]
+          },
+          {
+            "title": "Architecture: `components` and `containers`",
+            "depth": 2,
+            "id": "architecture:-components-and-containers",
+            "headings": [
+              {
+                "title": "Learn more",
+                "depth": 3,
+                "id": "learn-more"
+              }
+            ]
+          }
+        ],
+        "sections": [
+          {
+            "title": "Redux",
+            "source": "docs/js/redux.md",
+            "url": "js/redux.html",
+            "slug": "jsredux",
+            "headings": [
+              {
+                "title": "Usage",
+                "depth": 2,
+                "id": "usage"
+              },
+              {
+                "title": "Removing redux",
+                "depth": 2,
+                "id": "removing-redux",
+                "headings": [
+                  {
+                    "title": "I'm just getting started and Flux is hard",
+                    "depth": 3,
+                    "id": "i'm-just-getting-started-and-flux-is-hard"
+                  },
+                  {
+                    "title": "It's overkill for my project!",
+                    "depth": 3,
+                    "id": "it's-overkill-for-my-project!"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "ImmutableJS",
+            "source": "docs/js/immutablejs.md",
+            "url": "js/immutablejs.html",
+            "slug": "jsimmutablejs",
+            "headings": [
+              {
+                "title": "Usage",
+                "depth": 2,
+                "id": "usage"
+              },
+              {
+                "title": "Advanced Usage",
+                "depth": 2,
+                "id": "advanced-usage"
+              }
+            ]
+          },
+          {
+            "title": "reselect",
+            "source": "docs/js/reselect.md",
+            "url": "js/reselect.html",
+            "slug": "jsreselect",
+            "headings": [
+              {
+                "title": "Usage",
+                "depth": 2,
+                "id": "usage",
+                "headings": [
+                  {
+                    "title": "Simple selectors",
+                    "depth": 3,
+                    "id": "simple-selectors"
+                  },
+                  {
+                    "title": "Complex selectors",
+                    "depth": 3,
+                    "id": "complex-selectors"
+                  },
+                  {
+                    "title": "Adding a new selector",
+                    "depth": 3,
+                    "id": "adding-a-new-selector"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "redux-saga",
+            "source": "docs/js/redux-saga.md",
+            "url": "js/redux-saga.html",
+            "slug": "jsredux-saga",
+            "headings": [
+              {
+                "title": "Usage",
+                "depth": 2,
+                "id": "usage"
+              }
+            ]
+          },
+          {
+            "title": "i18n",
+            "source": "docs/js/i18n.md",
+            "url": "js/i18n.html",
+            "slug": "jsi18n",
+            "headings": [
+              {
+                "title": "Usage",
+                "depth": 2,
+                "id": "usage"
+              },
+              {
+                "title": "Extracting i18n JSON files",
+                "depth": 2,
+                "id": "extracting-i18n-json-files"
+              },
+              {
+                "title": "Adding A Language",
+                "depth": 2,
+                "id": "adding-a-language"
+              },
+              {
+                "title": "Removing i18n and react-intl",
+                "depth": 2,
+                "id": "removing-i18n-and-react-intl"
+              }
+            ]
+          },
+          {
+            "title": "routing",
+            "source": "docs/js/routing.md",
+            "url": "js/routing.html",
+            "slug": "jsrouting",
+            "headings": [
+              {
+                "title": "Usage",
+                "depth": 2,
+                "id": "usage"
+              },
+              {
+                "title": "Child Routes",
+                "depth": 2,
+                "id": "child-routes"
+              },
+              {
+                "title": "Dynamic routes",
+                "depth": 2,
+                "id": "dynamic-routes"
+              }
+            ]
+          },
+          {
+            "title": "Remove",
+            "source": "docs/js/remove.md",
+            "url": "js/remove.html",
+            "slug": "jsremove",
+            "headings": [
+              {
+                "title": "Removing `redux-saga`",
+                "depth": 2,
+                "id": "removing-redux-saga"
+              },
+              {
+                "title": "Removing `reselect`",
+                "depth": 2,
+                "id": "removing-reselect"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "index": {
+    "index.html": {
+      "source": "README.md",
+      "title": "7 Eleven CliQQ Docs",
+      "pageTitle": "7 Eleven CliQQ Docs",
+      "slug": "index",
+      "headings": [
+        {
+          "title": "Development Environment Setup",
+          "depth": 2,
+          "id": "development-environment-setup"
+        },
+        {
+          "title": "Quick start",
+          "depth": 2,
+          "id": "quick-start"
+        },
+        {
+          "title": "Documentation",
+          "depth": 2,
+          "id": "documentation"
+        },
+        {
+          "title": "Overview",
+          "depth": 2,
+          "id": "overview",
+          "headings": [
+            {
+              "title": "Application Folder Structure",
+              "depth": 3,
+              "id": "application-folder-structure"
+            },
+            {
+              "title": "Architecture Diagram",
+              "depth": 3,
+              "id": "architecture-diagram"
+            },
+            {
+              "title": "Building & Deploying",
+              "depth": 3,
+              "id": "building-and-deploying"
+            },
+            {
+              "title": "CSS",
+              "depth": 3,
+              "id": "css"
+            },
+            {
+              "title": "JS",
+              "depth": 3,
+              "id": "js"
+            },
+            {
+              "title": "SEO",
+              "depth": 3,
+              "id": "seo"
+            },
+            {
+              "title": "Testing",
+              "depth": 3,
+              "id": "testing"
+            }
+          ]
+        }
+      ]
+    },
+    "general/index.html": {
+      "source": "docs/general/README.md",
+      "title": "General - 7 Eleven CliQQ Docs",
+      "pageTitle": "General",
+      "slug": "general",
+      "headings": [
+        {
+          "title": "Quick scaffolding",
+          "depth": 2,
+          "id": "quick-scaffolding"
+        },
+        {
+          "title": "Instant feedback",
+          "depth": 2,
+          "id": "instant-feedback"
+        },
+        {
+          "title": "Predictable state management",
+          "depth": 2,
+          "id": "predictable-state-management"
+        },
+        {
+          "title": "Next generation JavaScript",
+          "depth": 2,
+          "id": "next-generation-javascript"
+        },
+        {
+          "title": "Next generation CSS",
+          "depth": 2,
+          "id": "next-generation-css"
+        },
+        {
+          "title": "Industry-standard routing",
+          "depth": 2,
+          "id": "industry-standard-routing"
+        },
+        {
+          "title": "Add To Homescreen",
+          "depth": 2,
+          "id": "add-to-homescreen"
+        },
+        {
+          "title": "Performant Web Font Loading",
+          "depth": 2,
+          "id": "performant-web-font-loading",
+          "headings": [
+            {
+              "title": "Adding a new font",
+              "depth": 3,
+              "id": "adding-a-new-font"
+            }
+          ]
+        },
+        {
+          "title": "Image optimization",
+          "depth": 2,
+          "id": "image-optimization"
+        }
+      ]
+    },
+    "general/introduction.html": {
+      "source": "docs/general/introduction.md",
+      "title": "Introduction - 7 Eleven CliQQ Docs",
+      "pageTitle": "Introduction",
+      "slug": "generalintroduction",
+      "headings": [
+        {
+          "title": "Tech Stack",
+          "depth": 2,
+          "id": "tech-stack",
+          "headings": [
+            {
+              "title": "Core",
+              "depth": 3,
+              "id": "core"
+            },
+            {
+              "title": "Unit Testing",
+              "depth": 3,
+              "id": "unit-testing"
+            },
+            {
+              "title": "Linting",
+              "depth": 3,
+              "id": "linting"
+            }
+          ]
+        },
+        {
+          "title": "Project Structure",
+          "depth": 2,
+          "id": "project-structure",
+          "headings": [
+            {
+              "title": "`app/`",
+              "depth": 3,
+              "id": "app"
+            },
+            {
+              "title": "`internals/`",
+              "depth": 3,
+              "id": "internals"
+            },
+            {
+              "title": "`server`",
+              "depth": 3,
+              "id": "server"
+            }
+          ]
+        },
+        {
+          "title": "Basic Building Blocks",
+          "depth": 2,
+          "id": "basic-building-blocks",
+          "headings": [
+            {
+              "title": "How does the application boot up?",
+              "depth": 3,
+              "id": "how-does-the-application-boot-up"
+            },
+            {
+              "title": "`app/app.js`:",
+              "depth": 3,
+              "id": "appapp.js:"
+            },
+            {
+              "title": "React Router:",
+              "depth": 3,
+              "id": "react-router:"
+            },
+            {
+              "title": "Redux:",
+              "depth": 3,
+              "id": "redux:"
+            },
+            {
+              "title": "Reselect:",
+              "depth": 3,
+              "id": "reselect:"
+            },
+            {
+              "title": "Redux Saga:",
+              "depth": 3,
+              "id": "redux-saga:"
+            }
+          ]
+        },
+        {
+          "title": "Example App: Behind the scenes",
+          "depth": 2,
+          "id": "example-app:-behind-the-scenes"
+        }
+      ]
+    },
+    "general/deployment.html": {
+      "source": "docs/general/deployment.md",
+      "title": "Deployment - 7 Eleven CliQQ Docs",
+      "pageTitle": "Deployment",
+      "slug": "generaldeployment",
+      "headings": [
+        {
+          "title": "Heroku",
+          "depth": 2,
+          "id": "heroku",
+          "headings": [
+            {
+              "title": "Easy 5-Step Deployment Process",
+              "depth": 3,
+              "id": "easy-5-step-deployment-process"
+            }
+          ]
+        },
+        {
+          "title": "AWS S3",
+          "depth": 2,
+          "id": "aws-s3",
+          "headings": [
+            {
+              "title": "Easy 7-Step Deployment Process",
+              "depth": 3,
+              "id": "easy-7-step-deployment-process"
+            }
+          ]
+        }
+      ]
+    },
+    "general/pwa.html": {
+      "source": "docs/general/pwa.md",
+      "title": "PWA - 7 Eleven CliQQ Docs",
+      "pageTitle": "PWA",
+      "slug": "generalpwa",
+      "headings": [
+        {
+          "title": "What is a Progressive Web App?",
+          "depth": 3,
+          "id": "what-is-a-progressive-web-app"
+        },
+        {
+          "title": "Service Workers",
+          "depth": 3,
+          "id": "service-workers"
+        },
+        {
+          "title": "Offline-first",
+          "depth": 3,
+          "id": "offline-first"
+        }
+      ]
+    },
+    "general/node.html": {
+      "source": "docs/general/node.md",
+      "title": "NodeJs - 7 Eleven CliQQ Docs",
+      "pageTitle": "NodeJs",
+      "slug": "generalnode",
+      "headings": [
+        {
+          "title": "Specify `engines` key in `package.json`",
+          "depth": 2,
+          "id": "specify-engines-key-in-package.json"
+        },
+        {
+          "title": "Use a smart `.npmrc`",
+          "depth": 2,
+          "id": "use-a-smart-.npmrc"
+        },
+        {
+          "title": "Hop on the ES6 train",
+          "depth": 2,
+          "id": "hop-on-the-es6-train"
+        },
+        {
+          "title": "Stick with lower case",
+          "depth": 2,
+          "id": "stick-with-lower-case"
+        },
+        {
+          "title": "Cluster your app",
+          "depth": 2,
+          "id": "cluster-your-app"
+        },
+        {
+          "title": "Be environmentally aware",
+          "depth": 2,
+          "id": "be-environmentally-aware"
+        },
+        {
+          "title": "Reference:",
+          "depth": 2,
+          "id": "reference:"
+        }
+      ]
+    },
+    "general/commands.html": {
+      "source": "docs/general/commands.md",
+      "title": "CLI Commands - 7 Eleven CliQQ Docs",
+      "pageTitle": "CLI Commands",
+      "slug": "generalcommands",
+      "headings": [
+        {
+          "title": "Development Mode",
+          "depth": 2,
+          "id": "development-mode"
+        },
+        {
+          "title": "Cleaning",
+          "depth": 2,
+          "id": "cleaning"
+        },
+        {
+          "title": "Generators",
+          "depth": 2,
+          "id": "generators"
+        },
+        {
+          "title": "Server",
+          "depth": 2,
+          "id": "server",
+          "headings": [
+            {
+              "title": "Development",
+              "depth": 3,
+              "id": "development"
+            },
+            {
+              "title": "Production",
+              "depth": 3,
+              "id": "production"
+            },
+            {
+              "title": "Port",
+              "depth": 3,
+              "id": "port"
+            }
+          ]
+        },
+        {
+          "title": "Building",
+          "depth": 2,
+          "id": "building"
+        },
+        {
+          "title": "Testing",
+          "depth": 2,
+          "id": "testing"
+        },
+        {
+          "title": "Unit testing",
+          "depth": 2,
+          "id": "unit-testing",
+          "headings": [
+            {
+              "title": "Browsers",
+              "depth": 3,
+              "id": "browsers"
+            },
+            {
+              "title": "Watching",
+              "depth": 3,
+              "id": "watching"
+            },
+            {
+              "title": "Remote testing",
+              "depth": 3,
+              "id": "remote-testing"
+            },
+            {
+              "title": "Performance testing",
+              "depth": 3,
+              "id": "performance-testing"
+            },
+            {
+              "title": "Dependency size test",
+              "depth": 3,
+              "id": "dependency-size-test"
+            }
+          ]
+        },
+        {
+          "title": "Linting",
+          "depth": 2,
+          "id": "linting",
+          "headings": [
+            {
+              "title": "JavaScript",
+              "depth": 3,
+              "id": "javascript"
+            },
+            {
+              "title": "CSS",
+              "depth": 3,
+              "id": "css"
+            }
+          ]
+        }
+      ]
+    },
+    "general/files.html": {
+      "source": "docs/general/files.md",
+      "title": "Tool Configuration - 7 Eleven CliQQ Docs",
+      "pageTitle": "Tool Configuration",
+      "slug": "generalfiles",
+      "headings": [
+        {
+          "title": "The root folder",
+          "depth": 2,
+          "id": "the-root-folder"
+        },
+        {
+          "title": "The `./internals` folder",
+          "depth": 2,
+          "id": "the-.internals-folder"
+        }
+      ]
+    },
+    "general/server-configs.html": {
+      "source": "docs/general/server-configs.md",
+      "title": "Server Configurations - 7 Eleven CliQQ Docs",
+      "pageTitle": "Server Configurations",
+      "slug": "generalserver-configs",
+      "headings": [
+        {
+          "title": "Apache",
+          "depth": 2,
+          "id": "apache"
+        },
+        {
+          "title": "Nginx",
+          "depth": 2,
+          "id": "nginx"
+        }
+      ]
+    },
+    "general/faq.html": {
+      "source": "docs/general/faq.md",
+      "title": "FAQ - 7 Eleven CliQQ Docs",
+      "pageTitle": "FAQ",
+      "slug": "generalfaq",
+      "headings": [
+        {
+          "title": "Where are Babel, ESLint and stylelint configured?",
+          "depth": 2,
+          "id": "where-are-babel-eslint-and-stylelint-configured"
+        },
+        {
+          "title": "Where are the files coming from when I run `npm start`?",
+          "depth": 2,
+          "id": "where-are-the-files-coming-from-when-i-run-npm-start"
+        },
+        {
+          "title": "How do I fix `Error: listen EADDRINUSE 127.0.0.1:3000`?",
+          "depth": 2,
+          "id": "how-do-i-fix-error:-listen-eaddrinuse-127.0.0.1:3000",
+          "headings": [
+            {
+              "title": "OS X / Linux:",
+              "depth": 3,
+              "id": "os-x-linux:"
+            },
+            {
+              "title": "Windows",
+              "depth": 3,
+              "id": "windows"
+            }
+          ]
+        },
+        {
+          "title": "Local webfonts not working for development",
+          "depth": 2,
+          "id": "local-webfonts-not-working-for-development"
+        },
+        {
+          "title": "Non-route containers",
+          "depth": 2,
+          "id": "non-route-containers",
+          "headings": [
+            {
+              "title": "Where do I put the reducer?",
+              "depth": 3,
+              "id": "where-do-i-put-the-reducer"
+            },
+            {
+              "title": "How do I run the saga?",
+              "depth": 3,
+              "id": "how-do-i-run-the-saga"
+            }
+          ]
+        },
+        {
+          "title": "Using this boilerplate with WebStorm",
+          "depth": 2,
+          "id": "using-this-boilerplate-with-webstorm",
+          "headings": [
+            {
+              "title": "Troubleshooting",
+              "depth": 3,
+              "id": "troubleshooting"
+            },
+            {
+              "title": "Enable ESLint",
+              "depth": 3,
+              "id": "enable-eslint"
+            }
+          ]
+        }
+      ]
+    },
+    "general/gotchas.html": {
+      "source": "docs/general/gotchas.md",
+      "title": "Gotchas - 7 Eleven CliQQ Docs",
+      "pageTitle": "Gotchas",
+      "slug": "generalgotchas",
+      "headings": [
+        {
+          "title": "Special images in HTML files",
+          "depth": 2,
+          "id": "special-images-in-html-files"
+        },
+        {
+          "title": "Load reducers optimistically",
+          "depth": 2,
+          "id": "load-reducers-optimistically"
+        },
+        {
+          "title": "Exclude modules from Babel processing",
+          "depth": 2,
+          "id": "exclude-modules-from-babel-processing"
+        },
+        {
+          "title": "Running tests in `watch` mode",
+          "depth": 2,
+          "id": "running-tests-in-watch-mode"
+        },
+        {
+          "title": "When in doubt, re-install!",
+          "depth": 2,
+          "id": "when-in-doubt-re-install!"
+        }
+      ]
+    },
+    "general/remove.html": {
+      "source": "docs/general/remove.md",
+      "title": "Remove - 7 Eleven CliQQ Docs",
+      "pageTitle": "Remove",
+      "slug": "generalremove",
+      "headings": [
+        {
+          "title": "Removing offline access",
+          "depth": 3,
+          "id": "removing-offline-access"
+        },
+        {
+          "title": "Removing add to homescreen functionality",
+          "depth": 3,
+          "id": "removing-add-to-homescreen-functionality"
+        },
+        {
+          "title": "Removing performant web font loading",
+          "depth": 3,
+          "id": "removing-performant-web-font-loading"
+        },
+        {
+          "title": "Removing image optimization",
+          "depth": 3,
+          "id": "removing-image-optimization"
+        }
+      ]
+    },
+    "styleguides/js.html": {
+      "source": "docs/styleguides/js.md",
+      "title": "JavaScript - 7 Eleven CliQQ Docs",
+      "pageTitle": "JavaScript",
+      "slug": "styleguidesjs",
+      "headings": [
+        {
+          "title": "JavaScript Standard Style",
+          "depth": 2,
+          "id": "javascript-standard-style",
+          "headings": [
+            {
+              "title": "The Rules",
+              "depth": 3,
+              "id": "the-rules"
+            }
+          ]
+        }
+      ]
+    },
+    "styleguides/css.html": {
+      "source": "docs/styleguides/css.md",
+      "title": "CSS - 7 Eleven CliQQ Docs",
+      "pageTitle": "CSS",
+      "slug": "styleguidescss",
+      "headings": [
+        {
+          "title": "Table of Contents",
+          "depth": 2,
+          "id": "table-of-contents"
+        },
+        {
+          "title": "Terminology",
+          "depth": 2,
+          "id": "terminology",
+          "headings": [
+            {
+              "title": "Rule declaration",
+              "depth": 3,
+              "id": "rule-declaration"
+            },
+            {
+              "title": "Selectors",
+              "depth": 3,
+              "id": "selectors"
+            },
+            {
+              "title": "Properties",
+              "depth": 3,
+              "id": "properties"
+            }
+          ]
+        },
+        {
+          "title": "CSS",
+          "depth": 2,
+          "id": "css",
+          "headings": [
+            {
+              "title": "Formatting",
+              "depth": 3,
+              "id": "formatting"
+            },
+            {
+              "title": "Comments",
+              "depth": 3,
+              "id": "comments"
+            },
+            {
+              "title": "ID selectors",
+              "depth": 3,
+              "id": "id-selectors"
+            },
+            {
+              "title": "JavaScript hooks",
+              "depth": 3,
+              "id": "javascript-hooks"
+            },
+            {
+              "title": "Border",
+              "depth": 3,
+              "id": "border"
+            }
+          ]
+        }
+      ]
+    },
+    "styleguides/react.html": {
+      "source": "docs/styleguides/react.md",
+      "title": "React - 7 Eleven CliQQ Docs",
+      "pageTitle": "React",
+      "slug": "styleguidesreact",
+      "headings": [
+        {
+          "title": "Table of Contents",
+          "depth": 2,
+          "id": "table-of-contents"
+        },
+        {
+          "title": "Basic Rules",
+          "depth": 2,
+          "id": "basic-rules"
+        },
+        {
+          "title": "Class vs `React.createClass` vs stateless",
+          "depth": 2,
+          "id": "class-vs-react.createclass-vs-stateless"
+        },
+        {
+          "title": "Naming",
+          "depth": 2,
+          "id": "naming"
+        },
+        {
+          "title": "Declaration",
+          "depth": 2,
+          "id": "declaration"
+        },
+        {
+          "title": "Alignment",
+          "depth": 2,
+          "id": "alignment"
+        },
+        {
+          "title": "Quotes",
+          "depth": 2,
+          "id": "quotes"
+        },
+        {
+          "title": "Spacing",
+          "depth": 2,
+          "id": "spacing"
+        },
+        {
+          "title": "Props",
+          "depth": 2,
+          "id": "props"
+        },
+        {
+          "title": "Refs",
+          "depth": 2,
+          "id": "refs"
+        },
+        {
+          "title": "Parentheses",
+          "depth": 2,
+          "id": "parentheses"
+        },
+        {
+          "title": "Tags",
+          "depth": 2,
+          "id": "tags"
+        },
+        {
+          "title": "Methods",
+          "depth": 2,
+          "id": "methods"
+        },
+        {
+          "title": "Ordering",
+          "depth": 2,
+          "id": "ordering"
+        },
+        {
+          "title": "`isMounted`",
+          "depth": 2,
+          "id": "ismounted"
+        },
+        {
+          "title": "Translation",
+          "depth": 2,
+          "id": "translation"
+        }
+      ]
+    },
+    "git/github-flow.html": {
+      "source": "docs/git/github-flow.md",
+      "title": "GitHub Flow - 7 Eleven CliQQ Docs",
+      "pageTitle": "GitHub Flow",
+      "slug": "gitgithub-flow",
+      "headings": [
+        {
+          "title": "The gist",
+          "depth": 3,
+          "id": "the-gist"
+        },
+        {
+          "title": "The workflow",
+          "depth": 3,
+          "id": "the-workflow"
+        },
+        {
+          "title": "useful config",
+          "depth": 3,
+          "id": "useful-config"
+        },
+        {
+          "title": "Naming Branches",
+          "depth": 2,
+          "id": "naming-branches"
+        }
+      ]
+    },
+    "git/deployment.html": {
+      "source": "docs/git/deployment.md",
+      "title": "Deployment - 7 Eleven CliQQ Docs",
+      "pageTitle": "Deployment",
+      "slug": "gitdeployment",
+      "headings": [
+        {
+          "title": "Code Review",
+          "depth": 2,
+          "id": "code-review"
+        },
+        {
+          "title": "Branch deploys",
+          "depth": 2,
+          "id": "branch-deploys"
+        }
+      ]
+    },
+    "testing/index.html": {
+      "source": "docs/testing/README.md",
+      "title": "Testing - 7 Eleven CliQQ Docs",
+      "pageTitle": "Testing",
+      "slug": "testing",
+      "headings": [
+        {
+          "title": "Usage",
+          "depth": 2,
+          "id": "usage"
+        }
+      ]
+    },
+    "testing/unit-testing.html": {
+      "source": "docs/testing/unit-testing.md",
+      "title": "Unit Testing - 7 Eleven CliQQ Docs",
+      "pageTitle": "Unit Testing",
+      "slug": "testingunit-testing",
+      "headings": [
+        {
+          "title": "Basics",
+          "depth": 2,
+          "id": "basics"
+        },
+        {
+          "title": "Jest",
+          "depth": 2,
+          "id": "jest",
+          "headings": [
+            {
+              "title": "expect",
+              "depth": 3,
+              "id": "expect"
+            }
+          ]
+        },
+        {
+          "title": "Testing Redux Applications",
+          "depth": 2,
+          "id": "testing-redux-applications",
+          "headings": [
+            {
+              "title": "Reducers",
+              "depth": 3,
+              "id": "reducers"
+            },
+            {
+              "title": "Actions",
+              "depth": 3,
+              "id": "actions"
+            }
+          ]
+        }
+      ]
+    },
+    "testing/component-testing.html": {
+      "source": "docs/testing/component-testing.md",
+      "title": "Component Testing - 7 Eleven CliQQ Docs",
+      "pageTitle": "Component Testing",
+      "slug": "testingcomponent-testing",
+      "headings": [
+        {
+          "title": "Shallow rendering",
+          "depth": 2,
+          "id": "shallow-rendering"
+        },
+        {
+          "title": "Enzyme",
+          "depth": 2,
+          "id": "enzyme"
+        }
+      ]
+    },
+    "testing/remote-testing.html": {
+      "source": "docs/testing/remote-testing.md",
+      "title": "Remote Testing - 7 Eleven CliQQ Docs",
+      "pageTitle": "Remote Testing",
+      "slug": "testingremote-testing"
+    },
+    "css/index.html": {
+      "source": "docs/css/README.md",
+      "title": "CSS - 7 Eleven CliQQ Docs",
+      "pageTitle": "CSS",
+      "slug": "css"
+    },
+    "css/styled-components.html": {
+      "source": "docs/css/styled-components.md",
+      "title": "Styled Component - 7 Eleven CliQQ Docs",
+      "pageTitle": "Styled Component",
+      "slug": "cssstyled-components",
+      "headings": [
+        {
+          "title": "Usage",
+          "depth": 2,
+          "id": "usage"
+        }
+      ]
+    },
+    "semantic/index.html": {
+      "source": "docs/semantic/README.md",
+      "title": "Semantic Theme - 7 Eleven CliQQ Docs",
+      "pageTitle": "Semantic Theme",
+      "slug": "semantic",
+      "headings": [
+        {
+          "title": "Quick Start",
+          "depth": 2,
+          "id": "quick-start"
+        },
+        {
+          "title": "Theming",
+          "depth": 2,
+          "id": "theming"
+        },
+        {
+          "title": "Using themes",
+          "depth": 2,
+          "id": "using-themes",
+          "headings": [
+            {
+              "title": "Sitewide Defaults",
+              "depth": 3,
+              "id": "sitewide-defaults"
+            }
+          ]
+        }
+      ]
+    },
+    "css/sanitize.html": {
+      "source": "docs/css/sanitize.md",
+      "title": "Sanitize.css - 7 Eleven CliQQ Docs",
+      "pageTitle": "Sanitize.css",
+      "slug": "csssanitize"
+    },
+    "css/sass.html": {
+      "source": "docs/css/sass.md",
+      "title": "Using Sass - 7 Eleven CliQQ Docs",
+      "pageTitle": "Using Sass",
+      "slug": "csssass"
+    },
+    "css/remove.html": {
+      "source": "docs/css/remove.md",
+      "title": "Remove - 7 Eleven CliQQ Docs",
+      "pageTitle": "Remove",
+      "slug": "cssremove",
+      "headings": [
+        {
+          "title": "Removing `sanitize.css`",
+          "depth": 2,
+          "id": "removing-sanitize.css"
+        }
+      ]
+    },
+    "js/index.html": {
+      "source": "docs/js/README.md",
+      "title": "JS - 7 Eleven CliQQ Docs",
+      "pageTitle": "JS",
+      "slug": "js",
+      "headings": [
+        {
+          "title": "State management",
+          "depth": 2,
+          "id": "state-management",
+          "headings": [
+            {
+              "title": "Learn more",
+              "depth": 3,
+              "id": "learn-more"
+            }
+          ]
+        },
+        {
+          "title": "Architecture: `components` and `containers`",
+          "depth": 2,
+          "id": "architecture:-components-and-containers",
+          "headings": [
+            {
+              "title": "Learn more",
+              "depth": 3,
+              "id": "learn-more"
+            }
+          ]
+        }
+      ]
+    },
+    "js/redux.html": {
+      "source": "docs/js/redux.md",
+      "title": "Redux - 7 Eleven CliQQ Docs",
+      "pageTitle": "Redux",
+      "slug": "jsredux",
+      "headings": [
+        {
+          "title": "Usage",
+          "depth": 2,
+          "id": "usage"
+        },
+        {
+          "title": "Removing redux",
+          "depth": 2,
+          "id": "removing-redux",
+          "headings": [
+            {
+              "title": "I'm just getting started and Flux is hard",
+              "depth": 3,
+              "id": "i'm-just-getting-started-and-flux-is-hard"
+            },
+            {
+              "title": "It's overkill for my project!",
+              "depth": 3,
+              "id": "it's-overkill-for-my-project!"
+            }
+          ]
+        }
+      ]
+    },
+    "js/immutablejs.html": {
+      "source": "docs/js/immutablejs.md",
+      "title": "ImmutableJS - 7 Eleven CliQQ Docs",
+      "pageTitle": "ImmutableJS",
+      "slug": "jsimmutablejs",
+      "headings": [
+        {
+          "title": "Usage",
+          "depth": 2,
+          "id": "usage"
+        },
+        {
+          "title": "Advanced Usage",
+          "depth": 2,
+          "id": "advanced-usage"
+        }
+      ]
+    },
+    "js/reselect.html": {
+      "source": "docs/js/reselect.md",
+      "title": "reselect - 7 Eleven CliQQ Docs",
+      "pageTitle": "reselect",
+      "slug": "jsreselect",
+      "headings": [
+        {
+          "title": "Usage",
+          "depth": 2,
+          "id": "usage",
+          "headings": [
+            {
+              "title": "Simple selectors",
+              "depth": 3,
+              "id": "simple-selectors"
+            },
+            {
+              "title": "Complex selectors",
+              "depth": 3,
+              "id": "complex-selectors"
+            },
+            {
+              "title": "Adding a new selector",
+              "depth": 3,
+              "id": "adding-a-new-selector"
+            }
+          ]
+        }
+      ]
+    },
+    "js/redux-saga.html": {
+      "source": "docs/js/redux-saga.md",
+      "title": "redux-saga - 7 Eleven CliQQ Docs",
+      "pageTitle": "redux-saga",
+      "slug": "jsredux-saga",
+      "headings": [
+        {
+          "title": "Usage",
+          "depth": 2,
+          "id": "usage"
+        }
+      ]
+    },
+    "js/i18n.html": {
+      "source": "docs/js/i18n.md",
+      "title": "i18n - 7 Eleven CliQQ Docs",
+      "pageTitle": "i18n",
+      "slug": "jsi18n",
+      "headings": [
+        {
+          "title": "Usage",
+          "depth": 2,
+          "id": "usage"
+        },
+        {
+          "title": "Extracting i18n JSON files",
+          "depth": 2,
+          "id": "extracting-i18n-json-files"
+        },
+        {
+          "title": "Adding A Language",
+          "depth": 2,
+          "id": "adding-a-language"
+        },
+        {
+          "title": "Removing i18n and react-intl",
+          "depth": 2,
+          "id": "removing-i18n-and-react-intl"
+        }
+      ]
+    },
+    "js/routing.html": {
+      "source": "docs/js/routing.md",
+      "title": "routing - 7 Eleven CliQQ Docs",
+      "pageTitle": "routing",
+      "slug": "jsrouting",
+      "headings": [
+        {
+          "title": "Usage",
+          "depth": 2,
+          "id": "usage"
+        },
+        {
+          "title": "Child Routes",
+          "depth": 2,
+          "id": "child-routes"
+        },
+        {
+          "title": "Dynamic routes",
+          "depth": 2,
+          "id": "dynamic-routes"
+        }
+      ]
+    },
+    "js/remove.html": {
+      "source": "docs/js/remove.md",
+      "title": "Remove - 7 Eleven CliQQ Docs",
+      "pageTitle": "Remove",
+      "slug": "jsremove",
+      "headings": [
+        {
+          "title": "Removing `redux-saga`",
+          "depth": 2,
+          "id": "removing-redux-saga"
+        },
+        {
+          "title": "Removing `reselect`",
+          "depth": 2,
+          "id": "removing-reselect"
+        }
+      ]
+    }
+  },
+  "sources": {
+    "README.md": "index.html",
+    "docs/general/README.md": "general/index.html",
+    "docs/general/introduction.md": "general/introduction.html",
+    "docs/general/deployment.md": "general/deployment.html",
+    "docs/general/pwa.md": "general/pwa.html",
+    "docs/general/node.md": "general/node.html",
+    "docs/general/commands.md": "general/commands.html",
+    "docs/general/files.md": "general/files.html",
+    "docs/general/server-configs.md": "general/server-configs.html",
+    "docs/general/faq.md": "general/faq.html",
+    "docs/general/gotchas.md": "general/gotchas.html",
+    "docs/general/remove.md": "general/remove.html",
+    "docs/styleguides/js.md": "styleguides/js.html",
+    "docs/styleguides/css.md": "styleguides/css.html",
+    "docs/styleguides/react.md": "styleguides/react.html",
+    "docs/git/github-flow.md": "git/github-flow.html",
+    "docs/git/deployment.md": "git/deployment.html",
+    "docs/testing/README.md": "testing/index.html",
+    "docs/testing/unit-testing.md": "testing/unit-testing.html",
+    "docs/testing/component-testing.md": "testing/component-testing.html",
+    "docs/testing/remote-testing.md": "testing/remote-testing.html",
+    "docs/css/README.md": "css/index.html",
+    "docs/css/styled-components.md": "css/styled-components.html",
+    "docs/semantic/README.md": "semantic/index.html",
+    "docs/css/sanitize.md": "css/sanitize.html",
+    "docs/css/sass.md": "css/sass.html",
+    "docs/css/remove.md": "css/remove.html",
+    "docs/js/README.md": "js/index.html",
+    "docs/js/redux.md": "js/redux.html",
+    "docs/js/immutablejs.md": "js/immutablejs.html",
+    "docs/js/reselect.md": "js/reselect.html",
+    "docs/js/redux-saga.md": "js/redux-saga.html",
+    "docs/js/i18n.md": "js/i18n.html",
+    "docs/js/routing.md": "js/routing.html",
+    "docs/js/remove.md": "js/remove.html",
+    "docs/css/becash.css": "css/becash.css",
+    "docs/general/webstorm-debug.png": "general/webstorm-debug.png",
+    "docs/general/webstorm-eslint.png": "general/webstorm-eslint.png",
+    "docs/general/workflow.png": "general/workflow.png",
+    "docs/images/arch-diag.png": "images/arch-diag.png",
+    "docs/images/cliqq.png": "images/cliqq.png",
+    "docs/images/github-flow.png": "images/github-flow.png",
+    "docs/images/sw-lifecycle.png": "images/sw-lifecycle.png"
+  }
+}

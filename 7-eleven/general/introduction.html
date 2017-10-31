@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=615badd5">
+    <script src="../assets/script.js?t=42463e55"></script>
+    <title>Introduction - 7 Eleven CliQQ Docs</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">7 Eleven CliQQ Docs</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-general" href="../general/index.html">General</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title -active link-generalintroduction" href="../general/introduction.html">Introduction</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a class="hlink link-tech-stack" href="#tech-stack">Tech Stack</a>
+                      <ul class="heading-list -depth-2">
+                        <li class="heading-item -depth-3"><a class="hlink link-core" href="#core">Core</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-unit-testing" href="#unit-testing">Unit Testing</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-linting" href="#linting">Linting</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-project-structure" href="#project-structure">Project Structure</a>
+                      <ul class="heading-list -depth-2">
+                        <li class="heading-item -depth-3"><a class="hlink link-app" href="#app">`app/`</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-internals" href="#internals">`internals/`</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-server" href="#server">`server`</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-basic-building-blocks" href="#basic-building-blocks">Basic Building Blocks</a>
+                      <ul class="heading-list -depth-2">
+                        <li class="heading-item -depth-3"><a class="hlink link-how-does-the-application-boot-up" href="#how-does-the-application-boot-up">How does the application boot up?</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-appapp.js:" href="#appapp.js:">`app/app.js`:</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-react-router:" href="#react-router:">React Router:</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-redux:" href="#redux:">Redux:</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-reselect:" href="#reselect:">Reselect:</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-redux-saga:" href="#redux-saga:">Redux Saga:</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-example-app:-behind-the-scenes" href="#example-app:-behind-the-scenes">Example App: Behind the scenes</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generaldeployment" href="../general/deployment.html">Deployment</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalpwa" href="../general/pwa.html">PWA</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalnode" href="../general/node.html">NodeJs</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalcommands" href="../general/commands.html">CLI Commands</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalfiles" href="../general/files.html">Tool Configuration</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalserver-configs" href="../general/server-configs.html">Server Configurations</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalfaq" href="../general/faq.html">FAQ</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalgotchas" href="../general/gotchas.html">Gotchas</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-generalremove" href="../general/remove.html">Remove</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Code Style Guides</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-styleguidesjs" href="../styleguides/js.html">JavaScript</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-styleguidescss" href="../styleguides/css.html">CSS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-styleguidesreact" href="../styleguides/react.html">React</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Contributing Code</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-gitgithub-flow" href="../git/github-flow.html">GitHub Flow</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-gitdeployment" href="../git/deployment.html">Deployment</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-testing" href="../testing/index.html">Testing</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-testingunit-testing" href="../testing/unit-testing.html">Unit Testing</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-testingcomponent-testing" href="../testing/component-testing.html">Component Testing</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-testingremote-testing" href="../testing/remote-testing.html">Remote Testing</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-css" href="../css/index.html">CSS</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-cssstyled-components" href="../css/styled-components.html">Styled Component</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-semantic" href="../semantic/index.html">Semantic Theme</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-csssanitize" href="../css/sanitize.html">Sanitize.css</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-csssass" href="../css/sass.html">Using Sass</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-cssremove" href="../css/remove.html">Remove</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-js" href="../js/index.html">JS</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-jsredux" href="../js/redux.html">Redux</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsimmutablejs" href="../js/immutablejs.html">ImmutableJS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsreselect" href="../js/reselect.html">reselect</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsredux-saga" href="../js/redux-saga.html">redux-saga</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsi18n" href="../js/i18n.html">i18n</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsrouting" href="../js/routing.html">routing</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-jsremove" href="../js/remove.html">Remove</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-generalintroduction">
+        <div class="header-nav">
+          <div class="right">
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="a-beginner&apos;s-guide-to-7-eleven-cliqq-app">A beginner&apos;s guide to 7 Eleven CliQQ app</h1>
+<p>The <a href="../index.html"><code>README.md</code></a> gives you adequate information on how to clone 7 Eleven CliQQ files, install dependencies and launch the example app. Once you have been successful at that, you might be interested in how things work under the hood. You might have come across this while reading <code>README.md</code>-</p>
+<h2 id="tech-stack">Tech Stack</h2>
+<p>Here&apos;s a curated list of packages (in no particular order) that you should have in-depth knowledge of, before starting with this project. However, the best way to have a complete list of dependencies is to see <a href="https://github.com/Coapperative/becashready/blob/master/package.json">package.json</a>.</p>
+<h3 id="core">Core</h3>
+<ul>
+<li>[ ] <a href="https://facebook.github.io/react/">React</a></li>
+<li>[ ] <a href="https://github.com/ReactTraining/react-router">React Router</a></li>
+<li>[ ] <a href="http://redux.js.org/">Redux</a></li>
+<li>[ ] <a href="https://redux-saga.github.io/redux-saga/">Redux Saga</a></li>
+<li>[ ] <a href="https://github.com/reactjs/reselect">Reselect</a></li>
+<li>[ ] <a href="https://facebook.github.io/immutable-js/">ImmutableJS</a></li>
+<li>[ ] <a href="https://github.com/styled-components/styled-components">Styled Components</a></li>
+<li>[ ] <a href="https://webpack.js.org/">Webpack</a></li>
+</ul>
+<h3 id="unit-testing">Unit Testing</h3>
+<ul>
+<li>[ ] <a href="http://facebook.github.io/jest/">Jest</a></li>
+<li>[ ] <a href="http://airbnb.io/enzyme/">Enzyme</a></li>
+</ul>
+<h3 id="linting">Linting</h3>
+<ul>
+<li>[ ] <a href="http://standardjs.com/">StandardJs</a></li>
+</ul>
+<p>There are 80+ node packages in <code>package.json</code>. If you&apos;re willing to go that extra mile, we&apos;d suggest you do a google on each and every package and find out how it works and fits in this boilerplate. That will give you a sense of how even the smallest of things work.</p>
+<p>Note that several features are optional and there are instructions in the docs on how to remove them.</p>
+<ul>
+<li><a href="../js/remove.html">...<code>redux-saga</code> or <code>reselect</code></a>- Offline-first, add to homescreen, performant web font loading and image optimization <a href="remove.html">here</a></li>
+<li>Sanitize.css <a href="../css/remove.html">here</a></li>
+<li>i18n and react-intl <a href="../js/i18n.html#removing-i18n-and-react-intl">here</a></li>
+</ul>
+<h2 id="project-structure">Project Structure</h2>
+<p>Let&apos;s start with understanding why this project has chosen this particular structure.</p>
+<ul>
+<li>Your source code will reside in the <code>app</code> folder.</li>
+<li>Configuration, Generator and Template files reside in the <code>internals</code> folder.</li>
+<li>The files in <code>mocks</code> are maintained autmatically by Jest.</li>
+<li>The <code>server</code> folder contains development and production server configuration files.</li>
+</ul>
+<h3 id="app"><code>app/</code></h3>
+<p>We use <a href="https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0#.4rmjqneiw">container/component architecture</a>. <code>containers/</code> contains React components which are connected to the redux store. <code>components/</code> contains dumb React components which depend on containers for data. Generally, you&apos;d want to treat one webpage (such as Login, Home etc.) as one container and a small part (such as Login form, Navigation bar) of that page as a component. But there are no rigid rules. You can bend this structure to your needs.</p>
+<h3 id="internals"><code>internals/</code></h3>
+<p>You can call this area the build engine of your <code>app/</code>. Your source code cannot be executed as-is in the web browser. It needs to pass through webpack to get converted into a form that web browsers understand.</p>
+<p><code>internals/webpack</code>: You&apos;ll most probably use EcmaScript 6 or EcmaScript 7 to write the source code of your app. <a href="http://stackoverflow.com/a/33748400/5241520">EcmaScript</a> is the standard for JavaScript. Most people are still using browsers which understand EcmaScript 5. So your code must be <a href="https://scotch.io/tutorials/javascript-transpilers-what-they-are-why-we-need-them">transpiled</a> into browser-understandable code. To apply the transpiler to your source code, you will use webpack. Feeling the jitters already? <a href="https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f#.d2uasw2n6">Don&apos;t worry</a>. Take a tea-break and then read on.</p>
+<p><code>internals/generators</code>: This folder has the code to scaffold out new components, containers and routes. Read <a href="commands.html">more about scaffolding</a> in the docs.</p>
+<p>There are other folders there too, but for brevity let&apos;s just skip them.</p>
+<h3 id="server"><code>server</code></h3>
+<p>As the name suggests, this folder contains development and production server configuration.</p>
+<h2 id="basic-building-blocks">Basic Building Blocks</h2>
+<p>These days when musicians produce music, they record different parts of the song separately. So vocals, drums, guitar, bass may be played in separate sessions and when they&apos;re satisfied with their work, the sessions are combined into a beautiful song. In a similar fashion, let&apos;s understand the role of different technologies and in the end, we&apos;ll see how everything converges into a single application.</p>
+<p>You can launch the example app by running <code>npm start</code>. To fully understand its workings, you&apos;ll have to understand multiple technologies and how they interact. From this point, we&apos;re going into an overdrive of implementation details. We&apos;ll simplify the technical jargon as much as we can. So please bear with us.</p>
+<h3 id="how-does-the-application-boot-up">How does the application boot up?</h3>
+<p>Your single page application hooks into <a href="https://github.com/Coapperative/becashready/blob/master/app/index.html"><code>app/index.html</code></a>. That means React will render your components inside a <code>div</code> which is injected into  <code>index.html</code>.
+But how do we include all of our react components into a single html? That&apos;s where webpack comes into the picture. Webpack will literally pack your application into small javascript chunks. These files will be included in a <code>&lt;script&gt;</code> tag which is injected into <code>index.html</code> .
+When your application is deployed on a server, browsers will load this html file. The javascript files that webpack has included will be executed by the browser, thereby booting up your react application! It&apos;s magic really!! No, not really, though is certainly can seem that way. Let&apos;s dissect this phenomenon to better know what&apos;s really going on.</p>
+<h3 id="appapp.js:"><code>app/app.js</code>:</h3>
+<p>When you run <code>npm start</code>, a webpack development server will be launched inside your terminal. You can then start browsing at <a href="http://localhost:3000">http://localhost:3000</a>.</p>
+<p>Before launching the server, Webpack requires an entry point to your application. Think of it as a door to your source code. In this boilerplate <a href="https://github.com/Coapperative/becashready/blob/master/app/app.js"><code>app/app.js</code></a> will be that entry point. Webpack will access the entire app from this file, transpile the application into ES5 and will create small chunks of  transpiled code. Only the required chunks will be loaded in the browser so that you won&apos;t have to worry about the size of your application.</p>
+<p><code>app/app.js</code> could be one of the most confusing files for any beginner. It contains all the things that are globally applied to your app. You&apos;ll see that there&apos;s a lot going on. Let&apos;s break it down.</p>
+<ul>
+<li><code>babel-polyfill</code> This will emulate a full ES2015 environment which in turn enables cool stuff like generator functions, <code>Promise</code>s, etc.</li>
+<li>A redux <code>store</code> is instantiated.</li>
+<li>A <code>history</code> object is created which remembers all the browsing history of your app. (BTW, very useful for analytics)</li>
+<li>A Router is set up, with all of your routes. See <a href="https://github.com/Coapperative/becashready/blob/master/app/routes.js"><code>routes.js</code></a></li>
+<li>Hot module replacement setup.</li>
+<li>i18n internationalization support setup.</li>
+<li><code>ReactDOM.render()</code> not only renders the <a href="https://github.com/Coapperative/becashready/blob/master/app/containers/App/index.js">root react component</a> called <code>&lt;App /&gt;</code>, of your application, but it renders it with <code>&lt;Provider /&gt;</code>, <code>&lt;LanguageProvider /&gt;</code> and <code>&lt;Router /&gt;</code>.</li>
+</ul>
+<ul>
+<li><code>&lt;Provider /&gt;</code> connects your app with the redux <code>store</code>.</li>
+<li><code>&lt;LanguageProvider /&gt;</code> provides language translation support to your app.</li>
+<li><code>&lt;Router /&gt;</code> will have information for your application routes.</li>
+</ul>
+<h3 id="react-router:">React Router:</h3>
+<p><code>&lt;Router /&gt;</code> has the crucial information for your routes. Check out <a href="https://github.com/Coapperative/becashready/blob/master/app/routes.js"><code>routes.js</code></a> to see how route <code>path</code>s are mapped with application containers.</p>
+<ul>
+<li>Path <code>&quot;/&quot;</code> corresponds to container <code>&lt;HomePage /&gt;</code></li>
+<li>Path <code>&quot;/features&quot;</code> corresponds to container <code>&lt;FeaturePage /&gt;</code></li>
+<li>Path <code>&quot;*&quot;</code> i.e. all other paths correspond to the <code>&lt;NotFoundPage /&gt;</code></li>
+</ul>
+<p>These containers along with their corresponding reducer and sagas are loaded asynchronously with the help of dynamic <code>import()</code>. Whenever webpack encounters <code>import()</code> in the code, it creates a separate chunk for those imports. That means for every route, there will be a separate chunk. And by corollary, only those javascript chunks will be downloaded by the browser which are required for the current route. So when you navigate to <code>&quot;/&quot;</code>, only chunks related to <code>&lt;HomePage /&gt;</code> will be downloaded and subsequently executed. This makes your application incredibly lightweight and lightning fast.</p>
+<h3 id="redux:">Redux:</h3>
+<p>Redux is going to play a huge role in your application. If you&apos;re new to redux, we&apos;d strongly suggest you to complete this checklist and then come back-</p>
+<ul>
+<li>[ ] Understand the motivation behind redux</li>
+<li>[ ] Understand the three principles of redux</li>
+<li>[ ] Understand and rewrite <strong>ALL</strong> <a href="http://redux.js.org/docs/introduction/Examples.html">example apps</a> from their repo on your own.</li>
+</ul>
+<p>Redux <code>store</code> is the heart of your application. Check out <a href="https://github.com/Coapperative/becashready/blob/master/app/store.js"><code>store.js</code></a> to see how we have configured the store.</p>
+<p>The store is created with the <code>createStore()</code> factory, which accepts three parameters.</p>
+<ol>
+<li><strong>Root reducer:</strong> A master reducer combining all reducers.</li>
+<li><strong>Initial state:</strong> You can initialize your state beforehand.</li>
+<li><strong>Middleware/enhancers:</strong> Middleware are third party libraries which intercept each redux action dispatched to the redux store and do stuff. For example, if you install <a href="https://github.com/evgenyrodionov/redux-logger"><code>redux-logger</code></a> as a middleware, it will listen to all the actions being dispatched to the store and print previous and next state in the javascript console. It&apos;s particulary helpful for developers to track application activity.</li>
+</ol>
+<p>In our application we are using two such middleware.</p>
+<ol>
+<li><strong>Router middleware:</strong> Keeps your routes in sync with the redux <code>store</code>.</li>
+<li><strong>Redux saga:</strong> Used for managing <em>side-effects</em> such as dispatching actions asynchronously or accessing browser data.</li>
+</ol>
+<h3 id="reselect:">Reselect:</h3>
+<p>Reselect is a library used for slicing your redux state and providing only the relevant sub-tree to a react component. It has three key features-</p>
+<ol>
+<li>Computational power</li>
+<li>Memoization</li>
+<li>Composability</li>
+</ol>
+<p>Imagine an application that shows a list of users. Its redux state tree stores an array of usernames with signatures -</p>
+<p><code>{id: int, username: string, gender: string, age: number }</code>.</p>
+<p>Let&apos;s see how the three features of reselect help.</p>
+<ul>
+<li><strong>Computation:</strong> While performing a search operation, reselect will filter the original array and return only matching usernames. Redux state does not have to store a separate array of filtered usernames.</li>
+<li><strong>Memoization:</strong> A selector will not compute a new result unless one of its arguments change. That means, if you are repeating the same search key, reselect will not filter the array again and again. It will just return the previous result, like caching. Reselect compares old and new arguments and decides whether to compute a new result.</li>
+<li><strong>Composability:</strong> You can combine multiple selectors. For example, one selector can filter usernames according to a search key and another selector can filter the already filtered array according to gender. One more selector can further filter according to age. You combine these selectors by using <code>createSelector()</code></li>
+</ul>
+<h3 id="redux-saga:">Redux Saga:</h3>
+<p>If your application is going to interact with some back-end application for data, we recommend using redux saga for side effect management. Too much of jargon? Let&apos;s simplify.</p>
+<p>Imagine that your application is fetching data in json format from a back-end. For every API call, ideally you should define at least three kinds of <a href="http://redux.js.org/docs/basics/Actions.html">action creators</a>:</p>
+<ol>
+<li><code>API_REQUEST</code>: Upon dispatching this, your application should show a spinner to let the user know that something&apos;s happening.</li>
+<li><code>API_SUCCESS</code>: Upon dispatching this, your application should show the data to the user.</li>
+<li><code>API_FAILURE</code>: Upon dispatching this, your application should show an error message to the user.</li>
+</ol>
+<p>And this is only for <strong><em>one</em></strong> API call. In a real-world scenario, one page of your application could be making tens of API calls. How do we manage all of them effectively? This essentially boils down to controlling the flow of your application. What if there was a background process that handles multiple actions simultaneously, communicates with redux store and react containers at the same time? This is where redux-saga comes into the picture. Redux-saga docs are so well-written that we could not put it better than this-</p>
+<blockquote>
+<p>The mental model is that a saga is like a separate thread in your application that&apos;s solely responsible for side effects. redux-saga is a redux middleware, which means this thread can be started, paused and cancelled from the main application with normal redux actions, it has access to the full redux application state and it can dispatch redux actions as well.</p>
+</blockquote>
+<h2 id="example-app:-behind-the-scenes">Example App: Behind the scenes</h2>
+<p>The react-boilerplate building blocks interoperate to produce a seamless application. Let&apos;s join these pieces together.</p>
+<img src="workflow.png" alt="boilerplate workflow" align="center">
+<h4 id="lesshomepage-greater"><code>&lt;HomePage /&gt;</code></h4>
+<p>Run <code>npm start</code> to launch the application. If you start browsing at <a href="https://localhost:3000">https://localhost:3000</a>, by default you will be navigated to the home page. Here, notice that route is <code>&quot;/&quot;</code>, so the <a href="https://github.com/Coapperative/becashready/blob/master/app/containers/HomePage/index.js"><code>&lt;HomePage /&gt;</code></a> container will be mounted. It is responsible for rendering a <code>&lt;form /&gt;</code> with a textbox and a <code>&lt;List /&gt;</code> of repositories.</p>
+<ul>
+<li>
+<p><code>mapDispatchToProps()</code>: Generally, we provide outgoing action creators (functions that create <a href="http://redux.js.org/docs/basics/Actions.html">action</a> objects) to the react component through this method. Notice that for every keypress in textbox, your state will be updated by dispatching a <code>changeUsername</code> action to the store. So at any point in time, your redux state will hold the currently typed username. When you submit the form, another action, <code>loadRepos</code> will be dispatched.</p>
+</li>
+<li>
+<p><code>mapStateToProps()</code>: Generally, we provide incoming state from redux store to the react component through this method. Notice that the we do not provide the entire state to the component, simply because we don&apos;t want the react component to have access to irrelevant data. The state will be filtered by selectors such as <code>selectRepos</code>, <code>selectUsername</code> etc.</p>
+</li>
+</ul>
+<p>Together these two methods work like magic. When you type something in the textbox the following things will happen in a sequential manner-</p>
+<ol>
+<li><code>changeUsername()</code> will send text to the redux store. The text can be accessed using <code>evt.target.value</code>. Here, <code>evt</code> is the <code>onChange</code> event emmited by pressing a key.</li>
+<li>Redux store will consult with its corresponding reducer, since a reducer knows what to with the data.</li>
+<li>When a reducer computes a new state tree, the store will update its state with the newly typed data.</li>
+<li>An update has occured in the state, therefore <code>mapStateToProps()</code> will be triggered and your react component will get the new data.</li>
+<li>The updated data will be set as the <code>value</code> to your <code>&lt;Input /&gt;</code>.</li>
+</ol>
+<p><em>So you see, if you type something in the textbox, it will not be directly reflected in the DOM. It must pass through redux. Redux will update the state and return it to the component. It&apos;s the component&apos;s responsibility to show the updated data.</em></p>
+<h4 id="homepagesagas.js"><code>HomePage/sagas.js</code></h4>
+<p>You must be wondering where does the list of repositories come from! Sagas are primarily used for making API calls. Sagas intercept actions dispatched to the redux store. That means a saga will listen to the actions and if it finds an action of interest, it will do something.</p>
+<p>Sagas are nothing but ES6 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generator functions</a>. These functions act as normal functions, the only difference is that they can be &quot;paused&quot; and &quot;resumed&quot; at any point in time. Redux saga provides an intuitive API for managing asynchronous operations.</p>
+<p>Check out <a href="https://github.com/Coapperative/becashready/blob/master/app/containers/HomePage/sagas.js">ProfilePage/sagas.js</a>. It can be confusing for untrained eyes. But the API of redux-saga is self-descriptive.</p>
+<ul>
+<li>You can <code>fork</code> a saga to send it to the background. That way, your code will not get blocked even when the saga is continuously running.</li>
+<li><code>takeLatest</code> is used for listening for a particular action. In this case, it will wait for a <code>LOAD_REPOS</code> action. Whenever you disptach this action, the saga will understand that you want to fetch repos from github&apos;s public API by calling <code>getRepos()</code>.</li>
+<li>If the API successfully returns some data, a <code>reposLoaded()</code> action will be dispatched which carries the data. When redux store receives this action, <a href="https://github.com/Coapperative/becashready/blob/master/app/containers/App/reducer.js">a reducer</a> will set incoming data in the new state tree.</li>
+</ul>
+<p><em>An update has occurred!</em> <code>mapStateToProps()</code> will be triggered. <code>&lt;HomePage /&gt;</code> will receive the new data. It&apos;s now the  container&apos;s responsibility to properly display the list of repositories.</p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../general/index.html"><span class="title">General</span></a></div>
+          <div class="right"><a href="../general/deployment.html"><span class="label">Next: </span><span class="title">Deployment</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
